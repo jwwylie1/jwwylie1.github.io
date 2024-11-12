@@ -2,8 +2,100 @@
 <html>
 <head>
     <link href="./style.css" rel="stylesheet">
+    <link href="./animation.css" rel="stylesheet">
+    <script src="./script.js" async="true"></script>
+    <!--FONTS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!--FONTS END-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-    <h1>jon <span class="test">loves </span>panayiota</h1>
+<body onscroll="darkenHeader()">
+    <!--HEADER-->
+    <div id="header">
+        <div class="headername">Jonathan Wylie</div>
+        <a href="https://github.com/jwwylie1" target="_blank">
+            <div class="socialbtn" onmouseover="socialover('github')" onmouseout="socialout('github')" id="githubbtn">
+                <div class="socialtop">
+                    <img src="github.svg" class="socialsvgtop">
+                </div>
+                <div class="socialbottom" style="background-color: #000">
+                    <img src="github.svg" class="socialsvgbottom">
+                    <div class="socialdesc">Github</div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/jonathan-wylie-4138332b8/" target="_blank">
+            <div class="socialbtn" onmouseover="socialover('linkedin')" onmouseout="socialout('linkedin')" id="linkedinbtn">
+                <div class="socialtop">
+                    <img src="linkedin.svg" class="socialsvgtop">
+                </div>
+                <div class="socialbottom" style="background-color: #0077b5">
+                    <img src="linkedin.svg" class="socialsvgbottom">
+                    <div class="socialdesc" style="margin-top:-3px">LinkedIn</div>
+                </div>
+            </div>
+        </a>
+        <div class="headercontact">//contact me--&gt;</div>
+    </div>
+    <!--END HEADER | START MAIN PAGE-->
+    <!--<div id="titlename"><span id="titlename1"></span><span id="titlename2"></span><span id="underscore">_</span></div>-->
+    <div id="titlegraphic">
+        <span id="titlevar"></span>
+        <span id="titlevarname"></span>
+        <span id="titleequals"></span>
+        <span id="titlebracket1"></span>
+        <span id="underscore1">_</span>
+        <br/>&nbsp;
+        <span id="titlestruct1"></span>
+        <span id="titlecolon1"></span>
+        <span id="titleval1"></span>
+        <span id="titlecomma1"></span>
+        <span id="underscore2" style="display:none">_</span>
+        <br/>&nbsp;
+        <span id="titlestruct2"></span>
+        <span id="titlecolon2"></span>
+        <span id="titleval2"></span>
+        <span id="titlecomma2"></span>
+        <span id="underscore3" style="display:none">_</span>
+        <br/>&nbsp;
+        <span id="titlestruct3"></span>
+        <span id="titlecolon3"></span>
+        <span id="titleval3"></span>
+        <span id="underscore4" style="display:none">_</span>
+        <br/>
+        <span id="titlecomma3"></span>
+        <span id="underscore5" style="display:none" class="blinking">_</span><br/>
+        <a href="#aboutme">
+            <button id="arrows"><img src="downs.svg" class="downs"></button>
+        </a>
+    </div>
+    <!--END MAIN PAGE | START ABOUT ME-->
+    <div id="aboutme" class="aboutme">
+        <div class="photoarea">
+            <img src="me.jpg" class="mephoto">
+            <div id="mebanner" class="mebanner">About Me</div>
+            <div class="aboutmedesc">
+                My name is Jonathan Wylie and I am a freshman studying <span style='color:#dcdcaa'>computer science</span> at the
+                <span style="color:#FFCB05">University of Michigan College of Engineering</span>. I plan to pursue a double minor in
+                <span style="color:#179fff">statistics</span> and <span style="color:#c77b79">business</span> in addition to my major. I am
+                currently looking for summer internships in software engineering to gain valuable experience outside of my formal education.
+            </div>
+        </div>
+        <a href="https://google.com" target="_blank" class="resumelink">
+            <button class="resumebtn">myResume<span style="color:#da70d6">()</span></button>
+        </a>
+    </div>
+    <!--END ABOUT ME | START OF SKILLS-->
+    <!--<div class="skillctr">
+        <div class="skilliconctr" style="border: 2px solid #e44d25">
+            <img src="html5.svg" class="skillicon">
+        </div>
+        <div class="skilltitle" style="color: #e44d25">HTML5 / CSS3</div>
+    </div>-->
+
 </body>
 </html>

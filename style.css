@@ -1,6 +1,184 @@
-.test {
-  color: red;
-  text-align: center;
-  width: 100%;
-  font-size: 7vw;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #222;
+    color: white;
+    padding-bottom: 5vw;
+}
+
+button {
+    border: 0;
+    background-color: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#header {
+    height: 60px;
+    background-color: #222;
+    overflow-y: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding-right: 2vw;
+}
+
+.headername, .headercontact {
+    font-size: 1.7vw;
+    text-align: center;
+    line-height: 60px;
+    width: 19%;
+    padding-left: 1%;
+    height: 60px;
+    float: left;
+    font-family: "Source Code Pro", monospace;
+}
+
+.headercontact {
+    color:#6a9955;
+    float: right;
+}
+
+.socialbtn {
+    height: 100%;
+    width: 60px;
+    float: right;
+    margin-left: 6px;
+}
+
+.socialtop, .socialbottom {
+    height: 60px;
+    width: 60px;
+}
+
+.socialsvgtop {
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 0 15px;
+}
+
+.socialsvgbottom {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0 0 15px;
+}
+
+.socialdesc {
+    color: white;
+    width: 100%;
+    text-align: center;;
+    font-size: 12px;
+    /*font-family: "Source Code Pro", monospace;*/
+}
+
+#titlegraphic {
+    font-size: 3vw;
+    line-height: 5vw;
+    width: 60%;
+    height: 85vh;
+    padding-top: 20vh;
+    margin-left: 20%;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+}
+
+#arrows {
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    border: 2px solid white;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-size: 2vw;
+    font-weight: 900;
+    margin: 2vw 0 0 28vw;
+    display: none;
+}
+
+.downs {
+    width: 2vw;
+    height: 2vw;
+    margin-top: .4vw;
+}
+
+#aboutme {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.mephoto {
+    border-radius: 50%;
+    height: 18vw;
+    height: 18vw;
+    position: relative;
+    z-index: 0;
+    border: 2px solid #ff685c;
+}
+
+.mebanner {
+    background-color: #ff685c;
+    position: relative;
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    height: 4vw;
+    line-height: 4vw;
+    font-size: 2.7vw;
+    margin: -5.5vw 0 0 38%;
+    z-index: 2;
+    width: 24%;
+}
+
+.aboutmedesc {
+    color: white;
+    font-size: 22px;
+    margin: 4vw 0 0 15%;
+    width: 70%;
+    line-height: 32px;
+}
+
+.resumebtn {
+    width: 15vw;
+    height: 4vw;
+    line-height: 4vw;
+    border: 1px solid #9cdcfe;
+    color: #9cdcfe;
+    font-family: "Source Code Pro", monospace;
+    font-size: 2vw;
+    margin-top: 3vw;
+    text-decoration: underline;
+}
+
+.resumelink:hover {opacity: 0.7}
+
+.skillctr {
+    width: 26vw;
+    margin: 6vw 0 0 5.5vw;
+    text-align: center;
+}
+
+.skilliconctr {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    margin: -3vw 0 0 10vw;
+    background-color: #222;
+    text-align: center;
+}
+
+.skillicon {
+    width: 50%;
+    display: inline;
+    vertical-align: center;
+    height: 100%;
+}
+
+.skilltitle {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin-top: .4vw;
 }
