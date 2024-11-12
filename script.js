@@ -76,7 +76,7 @@ function nameAnimation() {
     nameCounter += 1;
 }*/
 
-var nameTimer = setInterval(nameAnimation, 5);
+var nameTimer = setInterval(nameAnimation, 50);
 
 function darkenHeader() {
     scrolls[1] = window.scrollY;
