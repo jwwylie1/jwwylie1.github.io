@@ -1,5 +1,5 @@
 //var jw = "jonathanWylie";
-var jw = "var jonathanWylie = {student:true,softwareEngineer:true,camelCaseEnthusiast:true}"
+var jw = "var jonathanWylie = {student:true,computerScientist:true,camelCaseEnthusiast:true}"
 var nameCounter = 1;
 var scrolls = [0,0];
 
@@ -29,33 +29,34 @@ function nameAnimation() {
         document.getElementById('titlecomma1').innerText = jw.slice(33,nameCounter);
         document.getElementById('underscore2').style.display = 'none';
         document.getElementById('underscore3').style.display = 'inline';
-    } else if (nameCounter<=50) {
+    } else if (nameCounter<=51) {
         document.getElementById('titlestruct2').innerText = jw.slice(34,nameCounter);
-    } else if (nameCounter==51) {
+    } else if (nameCounter==52) {
         document.getElementById('titlestruct2').style.color = '#9cdcfe';
-        document.getElementById('titlecolon2').innerText = jw.slice(50,nameCounter);
-    } else if (nameCounter<=55) {
-        document.getElementById('titleval2').innerText = jw.slice(51,nameCounter);
-    } else if (nameCounter==56) {
+        document.getElementById('titlecolon2').innerText = jw.slice(51,nameCounter);
+    } else if (nameCounter<=56) {
+        document.getElementById('titleval2').innerText = jw.slice(52,nameCounter);
+    } else if (nameCounter==57) {
         document.getElementById('titleval2').style.color = '#da70d6';
-        document.getElementById('titlecomma2').innerText = jw.slice(55,nameCounter);
+        document.getElementById('titlecomma2').innerText = jw.slice(56,nameCounter);
         document.getElementById('underscore3').style.display = 'none';
         document.getElementById('underscore4').style.display = 'inline';
-    } else if (nameCounter<=75) {
-        document.getElementById('titlestruct3').innerText = jw.slice(56,nameCounter);
-    } else if (nameCounter==76) {
+    } else if (nameCounter<=76) {
+        document.getElementById('titlestruct3').innerText = jw.slice(57,nameCounter);
+    } else if (nameCounter==77) {
         document.getElementById('titlestruct3').style.color = '#9cdcfe';
-        document.getElementById('titlecolon3').innerText = jw.slice(75,nameCounter);
-    } else if (nameCounter<=80) {
-        document.getElementById('titleval3').innerText = jw.slice(76,nameCounter);
-    } else if (nameCounter==81) {
+        document.getElementById('titlecolon3').innerText = jw.slice(76,nameCounter);
+    } else if (nameCounter<=81) {
+        document.getElementById('titleval3').innerText = jw.slice(77,nameCounter);
+    } else if (nameCounter==82) {
         document.getElementById('titleval3').style.color = '#da70d6';
-        document.getElementById('titlecomma3').innerText = jw.slice(80,nameCounter);
+        document.getElementById('titlecomma3').innerText = jw.slice(81,nameCounter);
         document.getElementById('underscore4').style.display = 'none';
         document.getElementById('underscore5').style.display = 'inline';
     } else {
         document.getElementById('arrows').style.display = 'block';
         document.getElementById('arrows').classList.add('fadein');
+        clearInterval(nameTimer);
     }
     nameCounter += 1;
 }
