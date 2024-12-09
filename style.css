@@ -98,7 +98,7 @@ button:hover {
     width: 60%;
     height: 85vh;
     padding-top: 20vh;
-    margin-left: 20%;
+    margin-left: 25%;
     color: white;
 }
 
@@ -108,7 +108,7 @@ button:hover {
     height: 4vw;
     border: 2px solid white;
     color: white;
-    margin: 2vw 0 0 28vw;
+    margin: 2vw 0 0 23vw;
     display: none;
 }
 
