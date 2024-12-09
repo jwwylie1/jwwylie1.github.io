@@ -27,8 +27,8 @@
 </head>
 <body onscroll="darkenHeader()">
     <!--HEADER-->
-    <div id="header">
-        <div class="headername">Jonathan Wylie</div>
+    <header id="header">
+        <div class="headername code">Jonathan Wylie</div>
         <a href="https://github.com/jwwylie1" target="_blank">
             <div class="socialbtn" onmouseover="socialover('github')" onmouseout="socialout('github')" id="githubbtn">
                 <div class="socialtop">
@@ -62,11 +62,11 @@
                 </div>
             </div>
         </a>
-        <div class="headercontact">//contact me--&gt;</div>
-    </div>
+        <div class="headercontact code">//contact me--&gt;</div>
+    </header>
     <!--END HEADER | START MAIN PAGE-->
     <!--<div id="titlename"><span id="titlename1"></span><span id="titlename2"></span><span id="underscore">_</span></div>-->
-    <div id="titlegraphic">
+    <section id="titlegraphic" class="code"> <!--OPENING ANIMATION-->
         <span id="titlevar"></span>
         <span id="titlevarname"></span>
         <span id="titleequals"></span>
@@ -93,14 +93,14 @@
         <span id="titlecomma3"></span>
         <span id="underscore5" style="display:none" class="blinking">_</span><br/>
         <a href="#aboutme">
-            <button id="arrows"><img src="./imgs/downs.svg" class="downs"></button>
+            <button id="arrows" class="code"><img src="./imgs/downs.svg" class="downs"></button>
         </a>
-    </div>
+    </section>
     <!--END MAIN PAGE | START ABOUT ME-->
-    <div id="aboutme" class="aboutme">
+    <section id="aboutme" class="aboutme">
         <div class="photoarea">
             <img src="./imgs/me.jpg" class="mephoto">
-            <div id="mebanner" class="mebanner">About Me</div>
+            <div id="mebanner" class="mebanner code">About Me</div>
             <div class="aboutmedesc">
                 My name is Jonathan Wylie and I am a freshman studying <span style='color:#dcdcaa'>computer science</span> at the
                 <span style="color:#FFCB05">University of Michigan College of Engineering</span>. I plan to pursue a double minor in
@@ -109,9 +109,9 @@
             </div>
         </div>
         <a href="./resume.pdf" target="_blank" class="resumelink">
-            <button class="resumebtn">myResume<span style="color:#da70d6">()</span></button>
+            <button class="resumebtn code">myResume<span style="color:#da70d6">()</span></button>
         </a>
-    </div>
+    </section>
     <!--END ABOUT ME | START OF SKILLS-->
     <!--<div class="skillctr">
         <div class="skilliconctr" style="border: 2px solid #e44d25">
@@ -119,6 +119,61 @@
         </div>
         <div class="skilltitle" style="color: #e44d25">HTML5 / CSS3</div>
     </div>-->
+    <!--END SKILLS | START OF PROJECTS-->
+    <section id="projects">
+        <h1 class="projecttitle code">My Projects</h1>
+        <p class="projectareadesc">Some of the projects I've created throughout my journey.<br/>Take a look by clicking the <span class="lblue">/* links */</span> below each project!</p>
+        <section class="projectsrow">
+            <div class="projectshowcase">
+                <video width="100%" controls autoplay muted class="projectvideo">
+                    <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="projectdescbox">
+                <div class="projectname">Pacybase - Card Trading Platform<span class="nobold white">2021</span></div>
+                <div class="projectwords">A website for users of card-collecting app Pacybits <i>(not affiliated)</i> to post and search
+                    for trade requests, helping them towards the grand goal of a 100% collection.
+                    <p class="projectlink code"><a href="https://github.com/jwwylie1/Pacybase" target="blank">/* Github Repo */</b></a></p>
+                </div>
+                <div class="projectlangs">
+                    <img src="./imgs/html5.svg" class="projecticon" title="HTML5">
+                    <img src="./imgs/css3.svg" class="projecticon" title="CSS3">
+                    <img src="./imgs/js.svg" class="projecticon" title="JavaScript">
+                    <img src="./imgs/nodejs.svg" class="projecticon" title="Node.js">
+                    <img src="./imgs/mongodb.svg" class="projecticon" title="MongoDB">
+                </div>
+            </div>
+            <div class="projectshowcasemobile">
+                <video width="100%" controls autoplay muted class="projectvideo">
+                    <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <div class="projectsrow">
+            <div class="projectshowcase">
+                <video width="100%" controls autoplay muted class="projectvideo">
+                    <source src="./imgs/lwpdemo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="projectdescbox">
+                <div class="projectname">lwyliephotography - Interactive Photo Gallery<span class="nobold white">2019</span></div>
+                <div class="projectwords">My first programming endeavor. A simple yet elegant website showcasing hundreds of photos from
+                    across the globe, all captured by my wonderful sister. Click below to check them out!
+                    <p class="projectlink code"><a href="https://lwyliephotography.github.io" target="blank">/* Live Link */</b></a></p>
+                </div>
+                <div class="projectlangs">
+                    <img src="./imgs/html5.svg" class="projecticon" title="HTML5">
+                    <img src="./imgs/css3.svg" class="projecticon" title="CSS3">
+                    <img src="./imgs/js.svg" class="projecticon" title="JavaScript">
+                </div>
+            </div>
+            <div class="projectshowcasemobile">
+                <video width="100%" controls autoplay muted class="projectvideo">
+                    <source src="./imgs/lwpdemo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>

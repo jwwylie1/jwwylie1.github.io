@@ -7,6 +7,10 @@ body {
     padding-bottom: 5vw;
 }
 
+.code {font-family: "Source Code Pro", monospace;}
+
+.lblue {color: #9cdcfe;}
+
 .socialbottom, .socialsvgbottom, .headercontact {display:none}
 
 button {
@@ -164,4 +168,94 @@ button {
     font-size: 1.2vw;
     font-weight: 700;
     margin-top: .4vw;
+}
+
+.projecttitle {
+    width: auto;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: underline;
+    padding-top: 1.8vw;
+    margin: 8vw 0 -0.5vw 0;
+    border-top: 2px solid #ff685c;
+}
+
+.projectareadesc {
+    width: 80vw;
+    padding: 0 10vw 2vw 10vw;
+    text-align: center;
+    margin-bottom: 6vw;
+    border-bottom: 2px solid #ff685c;
+    font-size: 12px;
+}
+
+.projectsrow {
+    height: auto;
+    vertical-align: middle;
+    margin: 2.5vw 0;
+}
+
+.projectvideo {
+    border-radius: 8px;
+}
+
+.projectshowcase {display:none;}
+
+.projectshowcasemobile {
+    width: 80%;
+    margin: 16px 0 22px 10%;
+    height: 100%;
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: middle;
+    box-shadow: 0 0 4px -2px #9cdcfe;
+    border-radius: 10px;
+}
+
+.projectdescbox {
+    height: auto;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    display: inline-block;
+    border-radius: 12px;
+    box-shadow: 0 0 12px -2px black;
+    vertical-align: middle;
+}
+
+.projectname {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    color: #9cdcfe;
+    padding: 12px 3%;
+}
+
+.projectwords {
+    padding: 0 3%;
+    font-size: 12px;
+}
+
+.projectlangs{
+    text-align: center;
+}
+
+.projecticon {
+    height: 24px;
+    margin: 12px 12px;
+}
+
+.projectlink {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.projectlink a {
+    color: #9cdcfe;
+}
+
+.projectlink a:active {
+    font-weight: 600;
+    filter: brightness(1.2);
 }
