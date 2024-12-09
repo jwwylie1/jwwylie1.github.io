@@ -124,20 +124,20 @@ button {
 
 .aboutmedesc {
     color: white;
-    font-size: 18px;
-    margin: 8vw 0 0 15%;
-    width: 70%;
+    font-size: 16px;
+    margin: 8vw 0 0 10%;
+    width: 80%;
     line-height: 30px;
 }
 
 .resumebtn {
-    width: 34vw;
-    height: 9vw;
-    line-height: 8vw;
+    width: 40vw;
+    height: 11vw;
+    line-height: 9vw;
     border: 2px solid #9cdcfe;
     color: #9cdcfe;
     font-family: "Source Code Pro", monospace;
-    font-size: 4vw;
+    font-size: 5vw;
     margin-top: 6vw;
     text-decoration: underline;
 }
@@ -177,7 +177,7 @@ button {
     font-size: 24px;
     text-decoration: underline;
     padding-top: 3vw;
-    margin: 8vw 0 -0.5vw 0;
+    margin: 16vw 0 -0.5vw 0;
     border-top: 2px solid #ff685c;
 }
 
@@ -185,7 +185,7 @@ button {
     width: 80vw;
     padding: 0 10vw 4vw 10vw;
     text-align: center;
-    margin-bottom: 6vw;
+    margin-bottom: 12vw;
     border-bottom: 2px solid #ff685c;
     font-size: 16px;
 }
