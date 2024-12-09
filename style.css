@@ -9,8 +9,9 @@ body {
 }
 
 .code {font-family: "Source Code Pro", monospace;}
-
 .lblue {color: #9cdcfe;}
+.nobold {font-weight: 400;}
+.white {color: white;}
 
 ::-webkit-scrollbar {
     width: 6px;
@@ -33,10 +34,6 @@ a {
 button:hover {
     cursor: pointer;
 }
-
-.nobold {font-weight: 400;}
-
-.white {color: white;}
 
 #header {
     height: 60px;

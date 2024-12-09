@@ -8,8 +8,9 @@ body {
 }
 
 .code {font-family: "Source Code Pro", monospace;}
-
 .lblue {color: #9cdcfe;}
+.nobold {font-weight: 400;}
+.white {color: white;}
 
 .socialbottom, .socialsvgbottom, .headercontact {display:none}
 
@@ -175,18 +176,18 @@ button {
     text-align: center;
     font-size: 24px;
     text-decoration: underline;
-    padding-top: 1.8vw;
+    padding-top: 3vw;
     margin: 8vw 0 -0.5vw 0;
     border-top: 2px solid #ff685c;
 }
 
 .projectareadesc {
     width: 80vw;
-    padding: 0 10vw 2vw 10vw;
+    padding: 0 10vw 4vw 10vw;
     text-align: center;
     margin-bottom: 6vw;
     border-bottom: 2px solid #ff685c;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .projectsrow {
@@ -233,7 +234,7 @@ button {
 
 .projectwords {
     padding: 0 3%;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .projectlangs{
