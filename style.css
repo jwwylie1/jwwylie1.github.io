@@ -5,6 +5,7 @@ body {
     background-color: #222;
     color: white;
     padding-bottom: 5vw;
+    overflow-x: hidden;
 }
 
 .code {font-family: "Source Code Pro", monospace;}
