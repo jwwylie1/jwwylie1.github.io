@@ -254,6 +254,7 @@ button {
 
 .projectlink a {
     color: #9cdcfe;
+    text-decoration: none;
 }
 
 .projectlink a:active {
