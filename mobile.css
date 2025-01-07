@@ -223,6 +223,8 @@ button {
     vertical-align: middle;
 }
 
+.divider {height:2.5vw}
+
 .projectname {
     font-size: 20px;
     font-weight: 700;
