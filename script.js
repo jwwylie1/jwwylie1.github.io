@@ -100,3 +100,13 @@ function socialout(site) {
     document.getElementById(site + 'btn').classList.remove('socialhoveron');
     document.getElementById(site + 'btn').classList.add('socialhoveroff');
 }
+
+function copyToClipboard() {
+    navigator.clipboard.writeText('jwwylie1@gmail.com'); // add to clipboard
+    document.getElementById('copiedtoclipboard').style.display = 'flex';
+    document.getElementById('copiedtoclipboard').classList.add('clipboard');
+    setTimeout(function() {
+        document.getElementById('copiedtoclipboard').classList.remove('clipboard');
+        document.getElementById('copiedtoclipboard').style.display = 'none';
+    }, 2600)
+}

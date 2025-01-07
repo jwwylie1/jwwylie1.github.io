@@ -263,3 +263,24 @@ button {
     font-weight: 600;
     filter: brightness(1.2);
 }
+
+#copiedtoclipboard {
+    position: fixed;
+    top: 35vh;
+    left: 20vw;
+    background-color: #111;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 60vw;
+    height: 15vh;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 12px;
+    opacity: 0;
+    padding: 2vw;
+    min-width: 180px;
+    box-sizing: border-box;
+    box-shadow: 0 0 12px #ffffff33;
+}

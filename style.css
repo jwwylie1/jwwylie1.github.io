@@ -31,7 +31,7 @@ a {
     text-decoration: none;
 }
 
-button:hover {
+button:hover, a:hover {
     cursor: pointer;
 }
 
@@ -292,4 +292,25 @@ button:hover {
 
 .projectlink a:hover {
     font-weight: 600;
+}
+
+#copiedtoclipboard {
+    position: fixed;
+    top: 35vh;
+    left: 30vw;
+    background-color: #111;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 40vw;
+    height: 20vh;
+    text-align: center;
+    font-size: 26px;
+    min-width: 300px;
+    border-radius: 12px;
+    opacity: 0;
+    padding: 1vw;
+    box-sizing: border-box;
+    box-shadow: 0 0 12px #ffffff22;
 }

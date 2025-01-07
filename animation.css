@@ -62,3 +62,15 @@
     30% {opacity:0}
     100% {opacity:1}
 }
+
+.clipboard {
+    animation-name: clipboardANIM;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes clipboardANIM {
+    0% {opacity:0}
+    15% {opacity:1}
+    85% {opacity:1}
+    100% {opacity: 0}
+}
