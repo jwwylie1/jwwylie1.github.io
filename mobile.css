@@ -4,7 +4,7 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: #222;
     color: white;
-    padding-bottom: 5vw;
+    padding-bottom: 8vw;
 }
 
 .code {font-family: "Source Code Pro", monospace;}
@@ -262,6 +262,11 @@ button {
 .projectlink a:active {
     font-weight: 600;
     filter: brightness(1.2);
+}
+
+.endicon {
+    width: 14vw;
+    margin: 3vw 0 0 43vw;
 }
 
 #copiedtoclipboard {

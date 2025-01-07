@@ -294,6 +294,11 @@ button:hover, a:hover {
     font-weight: 600;
 }
 
+.endicon {
+    width: 6vw;
+    margin: 4vw 0 0 47vw;
+}
+
 #copiedtoclipboard {
     position: fixed;
     top: 35vh;
