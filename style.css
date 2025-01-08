@@ -319,3 +319,43 @@ button:hover, a:hover {
     box-sizing: border-box;
     box-shadow: 0 0 12px #ffffff22;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    box-shadow: 0 0 10px #00000099;
+
+    /* Position the tooltip */
+    width: 120px;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #111 transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
