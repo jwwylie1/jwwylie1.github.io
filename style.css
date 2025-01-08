@@ -299,6 +299,11 @@ button:hover, a:hover {
     margin: 4vw 0 0 47vw;
 }
 
+.endicon:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
 #copiedtoclipboard {
     position: fixed;
     top: 35vh;

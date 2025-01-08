@@ -50,10 +50,11 @@ function nameAnimation() {
         document.getElementById('titleval3').innerText = jw.slice(69,nameCounter);
     } else if (nameCounter==74) {
         document.getElementById('titleval3').style.color = '#da70d6';
-        document.getElementById('titlecomma3').innerText = jw.slice(73,nameCounter);
+        document.getElementById('titlebracket2').innerText = jw.slice(73,nameCounter);
         document.getElementById('underscore4').style.display = 'none';
         document.getElementById('underscore5').style.display = 'inline';
     } else {
+        document.getElementById('titlebracket2').style.color = '#ffcb05'
         document.getElementById('arrows').style.display = 'block';
         document.getElementById('arrows').classList.add('fadein');
         clearInterval(nameTimer);
@@ -109,4 +110,13 @@ function copyToClipboard() {
         document.getElementById('copiedtoclipboard').classList.remove('clipboard');
         document.getElementById('copiedtoclipboard').style.display = 'none';
     }, 2600)
+}
+
+function scrollToAboutMe() {
+    var aboutme = document.getElementById('aboutme');
+    aboutme.scrollIntoView({ behavior: "smooth", block: "center"});
+}
+
+function scrollToTop() {
+    document.body.scrollIntoView({ behavior: "smooth"});
 }
