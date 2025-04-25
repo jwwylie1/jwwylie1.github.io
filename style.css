@@ -1,0 +1,504 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #222;
+    color: white;
+    padding-bottom: 5vw;
+    overflow-x: hidden;
+}
+
+.code {font-family: "Source Code Pro", monospace;}
+.lblue {color: #9cdcfe;}
+.nobold {font-weight: 400;}
+.white {color: white;}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(16,16,16,.8);
+    border-radius: 3px;
+}
+
+button {
+    border: 0;
+    background-color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+}
+
+#header {
+    height: 60px;
+    background-color: #222;
+    overflow-y: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding-right: 2vw;
+}
+
+.headername, .headercontact {
+    font-size: 1.7vw;
+    text-align: center;
+    line-height: 60px;
+    width: 19%;
+    padding-left: 1%;
+    height: 60px;
+    float: left;
+}
+
+.headercontact {
+    color:#6a9955;
+    float: right;
+}
+
+.socialbtn {
+    height: 100%;
+    width: 60px;
+    float: right;
+    margin-left: 6px;
+}
+
+.socialtop, .socialbottom {
+    height: 60px;
+    width: 60px;
+}
+
+.socialsvgtop {
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 0 15px;
+}
+
+.socialsvgbottom {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0 0 15px;
+}
+
+.socialdesc {
+    color: white;
+    width: 100%;
+    text-align: center;;
+    font-size: 12px;
+    /*font-family: "Source Code Pro", monospace;*/
+}
+
+#titlegraphic {
+    font-size: 3vw;
+    line-height: 5vw;
+    width: 60%;
+    height: 85vh;
+    padding-top: 20vh;
+    margin-left: 25%;
+    color: white;
+}
+
+#arrows {
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    border: 2px solid white;
+    color: white;
+    margin: 2vw 0 0 23vw;
+    display: none;
+}
+
+.downs {
+    width: 2vw;
+    height: 2vw;
+    animation-name: bouncearrows;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes bouncearrows {
+    0% {margin-top: .2vw}
+    50% {margin-top: .6vw}
+    100% {margin-top: .2vw}
+}
+
+#aboutme {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5vw;
+}
+
+.mephoto {
+    border-radius: 50%;
+    height: 18vw;
+    height: 18vw;
+    position: relative;
+    z-index: 0;
+    border: 2px solid #ff685c;
+}
+
+.mebanner {
+    background-color: #ff685c;
+    position: relative;
+    color: white;
+    height: 4vw;
+    line-height: 4vw;
+    font-size: 2.7vw;
+    margin: -5.5vw 0 0 38%;
+    z-index: 2;
+    width: 24%;
+}
+
+.aboutmedesc {
+    color: white;
+    font-size: 22px;
+    margin: 4vw 0 0 15%;
+    width: 70%;
+    line-height: 32px;
+}
+
+.resumebtn {
+    width: 15vw;
+    height: 4vw;
+    line-height: 4vw;
+    border: 1px solid #9cdcfe;
+    color: #9cdcfe;
+    font-size: 2vw;
+    margin-top: 3vw;
+    text-decoration: underline;
+}
+
+#experience {
+    margin-left: 10vw;
+    position: relative;
+    font-size: 18px;
+    height: 1vw;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 3vw 0 5vw 0;
+    font-size: 40px;
+}
+
+.expHalf {
+    width: 34vw;
+    display: inline-block;
+    position: absolute;
+    padding: 0 3vw;
+    opacity: 0;
+}
+
+#experience::before { /*top dot*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 44.25%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#experience::after { /* bottom dot*/
+    content: '';
+    position: absolute;
+    top: 98%;
+    left: 44.25%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.expRight {left: 40vw;}
+
+#experienceline { /*line*/
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    width: 2px;
+    height: 0%;
+    background: white;
+}
+
+.companyctr {
+    position: absolute;
+    left: 38vw;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+    background-color: #222;
+    opacity: 0;
+}
+
+.companylogo {
+    width: 90%;
+    margin: 5%;
+}
+
+.kpit {top: 3.5vw; background-color: #b0ff44}
+.parc {top: 16vw; background-color: white}
+
+.companytitle {
+    font-size: 26px;
+}
+
+.kpitdesc {margin-top: 4vw;}
+.parcdesc {margin-top: 16.8vw;}
+
+@keyframes pulldownANIM {
+    from {height: 0}
+    to {height: 100%}
+}
+
+@keyframes blendinANIM {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.pulldown {
+    animation-name: pulldownANIM;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.blendin {
+    animation-name: blendinANIM;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.resumelink:hover {opacity: 0.7}
+
+.skillctr {
+    width: 26vw;
+    margin: 6vw 0 0 5.5vw;
+    text-align: center;
+}
+
+.skilliconctr {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    margin: -3vw 0 0 10vw;
+    background-color: #222;
+    text-align: center;
+}
+
+.skillicon {
+    width: 50%;
+    display: inline;
+    vertical-align: center;
+    height: 100%;
+}
+
+.skilltitle {
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin-top: .4vw;
+}
+
+.projecttitle {
+    width: auto;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+    padding-top: 1.8vw;
+    margin: 8vw 0 -0.5vw 0;
+    border-top: 2px solid #ff685c;
+}
+
+.projectareadesc {
+    width: 50vw;
+    padding: 0 25vw 2vw 25vw;
+    text-align: center;
+    margin-bottom: 6vw;
+    border-bottom: 2px solid #ff685c;
+    font-size: 20px;
+}
+
+.projectsrow {
+    height: auto;
+    vertical-align: middle;
+    margin: 2.5vw 0;
+}
+
+.projectvideo {
+    border-radius: 8px;
+}
+
+.projectshowcasemobile{display:none;}
+
+.projectshowcase {
+    width: 30%;
+    margin: 0 0 0 5%;
+    height: 100%;
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: middle;
+    box-shadow: 0 0 8px -2px #9cdcfe;
+    border-radius: 10px;
+}
+
+.projectdescbox {
+    height: auto;
+    width: 54%;
+    margin: 0 5% 0 5%;
+    display: inline-block;
+    border-radius: 12px;
+    box-shadow: 0 0 12px -2px black;
+    vertical-align: middle;
+}
+
+.divider {height:.7vw}
+
+.projectname {
+    font-size: 2.2vw;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    color: #9cdcfe;
+    padding: 12px 3%;
+}
+
+.projectyear {
+    width: 25%;
+    text-align: right;
+}
+
+.projectwords {
+    padding: 0 3%;
+    font-size: 18px;
+}
+
+.projectlangs{
+    text-align: center;
+}
+
+.projecticon {
+    height: 36px;
+    margin: 18px 24px;
+}
+
+.projectlink {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+}
+
+.projectlink a {
+    color: #9cdcfe;
+}
+
+.projectlink a:hover {
+    font-weight: 600;
+}
+
+.endicon {
+    width: 6vw;
+    margin: 4vw 0 0 47vw;
+}
+
+.endicon:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+#copiedtoclipboard {
+    position: fixed;
+    top: 35vh;
+    left: 30vw;
+    background-color: #111;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 40vw;
+    height: 20vh;
+    text-align: center;
+    font-size: 26px;
+    min-width: 300px;
+    border-radius: 12px;
+    opacity: 0;
+    padding: 1vw;
+    box-sizing: border-box;
+    box-shadow: 0 0 12px #ffffff22;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    box-shadow: 0 0 10px #00000099;
+
+    /* Position the tooltip */
+    width: 120px;
+    bottom: 90%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #111 transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.projectdescbox, .projectshowcase {margin-top:30vw}
+
+@keyframes slideupANIM {
+    from {margin-top: 30vw}
+    to {margin-top: 0vw}
+}
+
+@keyframes slideleftANIM {
+    from {margin-top: 100%;}
+    to {margin-top: 0%}
+}
+
+.slideup {
+    animation-name: slideupANIM;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.slideleft {
+    animation-name: slideleftANIM;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}

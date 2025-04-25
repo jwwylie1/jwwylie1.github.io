@@ -1,0 +1,76 @@
+.socialhoveron {
+    animation-name: socialhoveronANIM;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes socialhoveronANIM {
+    from {margin-top:0}
+    to {margin-top:-59.9px}
+}
+
+.socialhoveroff {
+    animation-name: socialhoveroffANIM;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes socialhoveroffANIM {
+    from {margin-top:-50px}
+    to {margin-top:0}
+}
+
+.blinking {
+    animation-name: blinkingANIM;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+@keyframes blinkingANIM {
+    0% {opacity: 1}
+    49% {opacity: 1}
+    50% {opacity: 0}
+    99% {opacity: 0}
+}
+
+.darkenheader {
+    animation-name: darkenheaderANIM;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes darkenheaderANIM {
+    from {background-color: #222}
+    to {background-color: #111}
+}
+
+.lightenheader {
+    animation-name: lightenheaderANIM;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+@keyframes lightenheaderANIM {
+    from {background-color: #111}
+    to {background-color: #222}
+}
+
+.fadein {
+    animation-name: fadeinANIM;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeinANIM {
+    0% {opacity:0}
+    30% {opacity:0}
+    100% {opacity:1}
+}
+
+.clipboard {
+    animation-name: clipboardANIM;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes clipboardANIM {
+    0% {opacity:0}
+    15% {opacity:1}
+    85% {opacity:1}
+    100% {opacity: 0}
+}
