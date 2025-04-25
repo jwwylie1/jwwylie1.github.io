@@ -8,32 +8,31 @@ function clearGraphic() {
     document.getElementById('titlegraphic').classList.remove('jsgraphic');
     document.getElementById('cpptab').classList.remove('selectedtab');
     document.getElementById('jstab').classList.remove('selectedtab');
-    document.getElementById('titlevar').innerText = '';
-    document.getElementById('titlevarname').innerText = '';
-    document.getElementById('titleequals').innerText = '';
-    document.getElementById('titlebracket1').innerText = '';
-    document.getElementById('titletype1').innerText = '';
-    document.getElementById('titlestruct1').innerText = '';
-    document.getElementById('titlecolon1').innerText = '';
-    document.getElementById('titleval1').innerText = '';
-    document.getElementById('titlecomma1').innerText = '';
-    document.getElementById('titletype2').innerText = '';
-    document.getElementById('titlestruct2').innerText = '';
-    document.getElementById('titlecolon2').innerText = '';
-    document.getElementById('titleval2').innerText = '';
-    document.getElementById('titlecomma2').innerText = '';
-    document.getElementById('titletype3').innerText = '';
-    document.getElementById('titlestruct3').innerText = '';
-    document.getElementById('titlecolon3').innerText = '';
-    document.getElementById('titleval3').innerText = '';
-    document.getElementById('titlecomma3').innerText = "";
-    document.getElementById('titlebracket2').innerText = '';
-    document.getElementById('titlecomma4').innerText = "";
+    
+    const titleGraphic = document.getElementById('titlegraphic');
+    const arrows = document.getElementById('arrows');
+    
+    // Get all elements within titlegraphic except those inside arrows
+    const elements = titleGraphic.querySelectorAll('*:not(#arrows, #arrows *)');
+    
+    // Process each element
+    elements.forEach(element => {
+        element.innerText = '';
+        element.style.color = 'white';
+
+        if (element.id.includes('underscore')) {
+            element.style.display = 'none';
+            element.innerText = '_';
+        }
+    });
+
     document.getElementById('underscore1').style.display = 'inline';
     document.getElementById('underscore2').style.display = 'none';
     document.getElementById('underscore3').style.display = 'none';
     document.getElementById('underscore4').style.display = 'none';
     document.getElementById('underscore5').style.display = 'none';
+    
+
     clearInterval(nameTimer);
 }
 
@@ -103,6 +102,7 @@ function animateCPP() {
         if (nameCounter==6) {document.getElementById('titlevar').style.color = '#179fff'}
         document.getElementById('titlevarname').innerText = jw.slice(5,nameCounter);
     } else if (nameCounter<=21) { // {
+        if (nameCounter==20) {document.getElementById('titlevarname').style.color = '#4ec9b0'}
         document.getElementById('titlebracket1').innerText = jw.slice(19,nameCounter);
     } else if (nameCounter<=25) { // bool
         if (nameCounter==22) {document.getElementById('titlebracket1').style.color = '#ffcb05'}
@@ -110,7 +110,7 @@ function animateCPP() {
         document.getElementById('underscore1').style.display = 'none';
         document.getElementById('underscore2').style.display = 'inline';
     } else if (nameCounter<=33) { // student
-        if (nameCounter==26) {document.getElementById('titletype1').style.color = '#ff0000'}
+        if (nameCounter==26) {document.getElementById('titletype1').style.color = '#179fff'}
         document.getElementById('titlestruct1').innerText = jw.slice(25,nameCounter);
         document.getElementById('underscore1').style.display = 'none';
         document.getElementById('underscore2').style.display = 'inline';
@@ -127,7 +127,7 @@ function animateCPP() {
     } else if (nameCounter<=43) { // bool
         document.getElementById('titletype2').innerText = jw.slice(39,nameCounter);
     } else if (nameCounter<=53) { // developer
-        if (nameCounter==44) {document.getElementById('titletype2').style.color = '#ff0000'};
+        if (nameCounter==44) {document.getElementById('titletype2').style.color = '#179fff'};
         document.getElementById('titlestruct2').innerText = jw.slice(43,nameCounter);
     } else if (nameCounter==54) { // =
         document.getElementById('titlestruct2').style.color = '#9cdcfe';
@@ -142,7 +142,7 @@ function animateCPP() {
     } else if (nameCounter<=63) { // bool
         document.getElementById('titletype3').innerText = jw.slice(59,nameCounter);
     } else if (nameCounter<=83) { // camelCaseEnthusiast
-        if (nameCounter==64) {document.getElementById('titletype3').style.color = '#ff0000'};
+        if (nameCounter==64) {document.getElementById('titletype3').style.color = '#179fff'};
         document.getElementById('titlestruct3').innerText = jw.slice(63,nameCounter);
     } else if (nameCounter==84) { // =
         document.getElementById('titlestruct3').style.color = '#9cdcfe';
