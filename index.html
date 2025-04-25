@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-62XNV9HZHZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-62XNV9HZHZ');
+</script>
+<!--end Google Tag-->
+    <link href="./style.css" rel="stylesheet" media="only screen and (min-width:551px)">
+    <link href="./mobile.css" rel="stylesheet" media="only screen and (max-width:551px)">
+    <link href="./animation.css" rel="stylesheet">
+    <script src="./script.js" async="true"></script>
+    <!--FONTS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!--FONTS END-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jonathan Wylie</title>
+    <link rel="icon" href="./imgs/icon.png">
+</head>
+<body onscroll="darkenHeader()">
+    <!--HEADER-->
+    <header id="header">
+        <div class="headername code">Jonathan Wylie</div>
+        <a href="https://github.com/jwwylie1" target="_blank">
+            <div class="socialbtn" onmouseover="socialover('github')" onmouseout="socialout('github')" id="githubbtn">
+                <div class="socialtop">
+                    <img src="./imgs/github.svg" class="socialsvgtop">
+                </div>
+                <div class="socialbottom" style="background-color: #000">
+                    <img src="./imgs/github.svg" class="socialsvgbottom">
+                    <div class="socialdesc">GitHub</div>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/jonathan-wylie-4138332b8/" target="_blank">
+            <div class="socialbtn" onmouseover="socialover('linkedin')" onmouseout="socialout('linkedin')" id="linkedinbtn">
+                <div class="socialtop">
+                    <img src="./imgs/linkedin.svg" class="socialsvgtop">
+                </div>
+                <div class="socialbottom" style="background-color: #0077b5">
+                    <img src="./imgs/linkedin.svg" class="socialsvgbottom">
+                    <div class="socialdesc" style="margin-top:-3px">LinkedIn</div>
+                </div>
+            </div>
+        </a>
+        <a onclick="copyToClipboard()">
+            <div class="socialbtn" onmouseover="socialover('email')" onmouseout="socialout('email')" id="emailbtn">
+                <div class="socialtop">
+                    <img src="./imgs/envelope.svg" class="socialsvgtop">
+                </div>
+                <div class="socialbottom" style="background-color: #d7493b">
+                    <img src="./imgs/envelope.svg" class="socialsvgbottom">
+                    <div class="socialdesc" style="margin-top:-3px">Email</div>
+                </div>
+            </div>
+        </a>
+        <div class="headercontact code">//contact me--&gt;</div>
+    </header>
+    <!--END HEADER | START MAIN PAGE-->
+    <!--<div id="titlename"><span id="titlename1"></span><span id="titlename2"></span><span id="underscore">_</span></div>-->
+    <section id="titlegraphic" class="code"> <!--OPENING ANIMATION-->
+        <span id="titlevar"></span>
+        <span id="titlevarname"></span>
+        <span id="titleequals"></span>
+        <span id="titlebracket1"></span>
+        <span id="underscore1">_</span>
+        <br/>&nbsp;
+        <span id="titlestruct1"></span>
+        <span id="titlecolon1"></span>
+        <span id="titleval1"></span>
+        <span id="titlecomma1"></span>
+        <span id="underscore2" style="display:none">_</span>
+        <br/>&nbsp;
+        <span id="titlestruct2"></span>
+        <span id="titlecolon2"></span>
+        <span id="titleval2"></span>
+        <span id="titlecomma2"></span>
+        <span id="underscore3" style="display:none">_</span>
+        <br/>&nbsp;
+        <span id="titlestruct3"></span>
+        <span id="titlecolon3"></span>
+        <span id="titleval3"></span>
+        <span id="underscore4" style="display:none">_</span>
+        <br/>
+        <span id="titlebracket2"></span>
+        <span id="underscore5" style="display:none" class="blinking">_</span><br/>
+        <button onclick="scrollToAboutMe()" id="arrows">
+            <img src="./imgs/downs.svg" class="downs">
+        </button>
+    </section>
+    <!--END MAIN PAGE | START ABOUT ME-->
+    <section id="aboutme" class="aboutme">
+        <div class="photoarea">
+            <img src="./imgs/me.jpg" class="mephoto">
+            <div id="mebanner" class="mebanner code">About Me</div>
+            <div class="aboutmedesc">
+                My name is Jonathan Wylie and I am a freshman studying <span style='color:#dcdcaa'>computer science</span> at the
+                <span style="color:#FFCB05">University of Michigan College of Engineering</span>. I plan to pursue a double minor in
+                <span style="color:#179fff">mathematics</span> and <span style="color:#c77b79">entrepreneurship</span> in addition to my major.
+                I am currently looking for summer internships in software engineering to gain valuable experience outside of my formal education.
+                At the moment, I am mainly learning and using <span style="color:#f7df1e">JavaScript</span> and <span style="color:#047bfb">C++</span>,
+                but I am excited to learn anything for any task.
+            </div>
+        </div>
+        <a href="./JonathanWylieResume.pdf" target="_blank" class="resumelink">
+            <button class="resumebtn code">myResume<span style="color:#da70d6">()</span></button>
+        </a>
+    </section>
+    <!--END ABOUT ME | START OF EXPERIENCE-->
+    <h1 class="projecttitle code">What I've Been Up To</h1>
+    <p class="projectareadesc">A look at some of my experiences so far.<br/>
+        I am always looking for new opportunities to gain valuable experience!</p>
+    <section id="experience">
+        <div id="experienceline"></div>
+        <div class="companyctr kpit">
+            <img src="./imgs/kpit.jpg" class="companylogo">
+        </div>
+        <div class="companyctr parc">
+            <img src="./imgs/parclife.jpg" class="companylogo">
+        </div>
+        <div class="expHalf" style="text-align:right">
+            <div class="expdesc kpitdesc">
+                <b class="companytitle">KPIT Technologies Inc.</b><br/>
+                <b>Intern&emsp;|&emsp;2025</b><br/>
+                TO BE FILLED IN LATER.
+            </div>
+        </div>
+        <div class="expHalf expRight">
+            <div class="expdesc parcdesc">
+                <b class="companytitle">PARClife</b><br/>
+                <b>Volunteer&emsp;|&emsp;2023&ndash;2025</b><br/>
+                Volunteered over 100 hours as a peer mentor at summer and after-school
+                camp for teens and young adults with Autism Spectrum Disorder.
+            </div>
+        </div>
+    </section>
+
+    <!--END EXPERIENCE | START OF PROJECTS-->
+    <section id="projects">
+        <h1 class="projecttitle code">Things I've Built</h1>
+        <p class="projectareadesc">Some of the projects I've created throughout my journey.<br/>Take a look by clicking the <span class="lblue">/* links */</span> below each project!</p>
+        <!--Web scraper-->
+        <!--<section class="projectsrow">
+            <div class="projectshowcase">
+                <video width="100%" controls autoplay muted class="projectvideo">
+                    <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="projectdescbox">
+                <div class="projectname">Wefut Web Scraper<span class="nobold white">2024</span></div>
+                <div class="projectwords">A web scraping tool created to reignite my previous Pacybase project, scraping a dozen data points and images from
+                    over 6 thousand cards to bring an outdated site back to the present without the many hours of manual copying.
+                    <p class="projectlink code"><a href="https://github.com/jwwylie1/Wefut-Scraper" target="blank">/* GitHub Repo */</b></a></p>
+                </div>
+                <div class="projectlangs">
+                    <img src="./imgs/js.svg" class="projecticon" title="JavaScript">
+                    <img src="./imgs/nodejs.svg" class="projecticon" title="Node.js">
+                    <img src="./imgs/cheerio.svg" class="projecticon" title="Cheerio">
+                </div>
+            </div>
+            <div class="projectshowcasemobile">
+                <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
+                    <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>-->
+
+        <!--Blackjack-->
+
+        <section class="projectsrow">
+            <div class="projectshowcase">
+                <video width="100%" controls autoplay muted class="projectvideo">
+                    <source src="./imgs/blackjackdemo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="projectdescbox">
+                <div class="projectname">Beat the House - Blackjack and Card Counting Trainer<span class="projectyear nobold white">2025</span></div>
+                <div class="projectwords">A C++/SFML-based Blackjack simulator that trains players in decision-making and card-counting 
+                    techniques. After each move (hit, stand, double, etc.), the app evaluates whether the choice was statistically 
+                    optimal and provides instant feedback.
+                    <br/><div class="divider"></div>
+                    Users can also enable true count tracking and live player edge (for real-time card-counting practice), which is 
+                    calculated by running 100,000 Monte Carlo simulations per hand, using optimal strategy on the remaining deck composition.
+                    <p class="projectlink code"><a href="https://github.com/jwwylie1/Blackjack" target="_blank">/* Github Repo */</b></a></p>
+                </div>
+                <div class="projectlangs">
+                    <div class="tooltip"><img src="./imgs/cpp.svg" class="projecticon">
+                        <span class="tooltiptext">C++</span>
+                    </div>
+                    <div class="tooltip"><img src="./imgs/sfml.svg" class="projecticon">
+                        <span class="tooltiptext">SFML</span>
+                    </div>
+                </div>
+            </div>
+            <div class="projectshowcasemobile">
+                <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
+                    <source src="./imgs/blackjackdemo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!--Pacybase-->
+
+        <section class="projectsrow">
+            <div class="projectshowcase">
+                <video width="100%" controls autoplay muted class="projectvideo">
+                    <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="projectdescbox">
+                <div class="projectname">Pacybase/MF Trading - Card Trading Platform<span class="projectyear nobold white">2022&ndash;24</span></div>
+                <div class="projectwords">A full stack website for users of card-collecting apps Pacybits/Madfut to post and search
+                    for trade requests, helping users complete their collection more effectively than ever. Started in 2022,
+                    revamped in 2024.
+                    <br/><div class="divider"></div>
+                    Uses a Node.js backend connected to a MongoDB database to store user posts. A custom web scraper was used to
+                    generate an array of over 6300 objects and download images for each. Vanilla HTML, CSS, and JavaScript make up the
+                    frontend. Deployed on Heroku via GitHub.
+                    <p class="projectlink code"><a href="https://mf-trading.net" target="_blank">/* Live Link */</b></a></p>
+                </div>
+                <div class="projectlangs">
+                    <div class="tooltip"><img src="./imgs/html5.svg" class="projecticon">
+                        <span class="tooltiptext">HTML5</span>
+                    </div>
+                    <div class="tooltip"><img src="./imgs/css3.svg" class="projecticon">
+                        <span class="tooltiptext">CSS3</span>
+                    </div>
+                    <div class="tooltip"><img src="./imgs/js.svg" class="projecticon">
+                        <span class="tooltiptext">JavaScript</span>
+                    </div>
+                    <div class="tooltip"><img src="./imgs/nodejs.svg" class="projecticon">
+                        <span class="tooltiptext">Node.js</span>
+                    </div>
+                    <div class="tooltip"><img src="./imgs/mongodb.svg" class="projecticon">
+                        <span class="tooltiptext">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="projectshowcasemobile">
+                <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
+                    <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!--Lwyliephotography-->
+        <div class="projectsrow">
+            <div class="projectshowcase">
+                <video width="100%" controls autoplay muted class="projectvideo">
+                    <source src="./imgs/lwpdemo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="projectdescbox">
+                <div class="projectname">lwyliephotography - Interactive Photo Gallery<span class="projectyear nobold white">2019</span></div>
+                <div class="projectwords">My first programming endeavor. A simple yet elegant website showcasing hundreds of photos from
+                    across the globe, all captured by my wonderful sister.
+                    <p class="projectlink code"><a href="https://lwyliephotography.github.io" target="_blank">/* Live Link */</b></a></p>
+                </div>
+                <div class="projectlangs">
+                    <div class="tooltip"><img src="./imgs/html5.svg" class="projecticon">
+                        <span class="tooltiptext">HTML5</span>
+                    </div>
+                    <div class="tooltip"><img src="./imgs/css3.svg" class="projecticon">
+                        <span class="tooltiptext">CSS3</span>
+                    </div>
+                    <div class="tooltip"><img src="./imgs/js.svg" class="projecticon">
+                        <span class="tooltiptext">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="projectshowcasemobile">
+                <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
+                    <source src="./imgs/lwpdemo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <img class="endicon" src="./imgs/icon.png" onclick="scrollToTop()"/>
+
+    <div id="copiedtoclipboard">"jwwylie1@gmail.com" copied to clipboard!</div>
+
+</body>
+</html>
