@@ -99,5 +99,18 @@ document.querySelectorAll('.projectsrow').forEach(el => {
     projectsObserver.observe(el);
 });
 
+const headerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slideup');
+        startProjectAnimation();
+      }
+    });
+}, { threshold: 0 });
+
+document.querySelectorAll('#projecttitle').forEach(el => {
+    headerObserver.observe(el);
+});
+
 window.addEventListener('load', updateParentHeight);
 window.addEventListener('resize', updateParentHeight);

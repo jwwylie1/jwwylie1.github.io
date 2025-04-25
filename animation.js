@@ -2,6 +2,10 @@ let jw;
 let nameCounter = 1;
 let nameTimer;
 
+const c3 = document.getElementById('projecttitle').children[1];
+const c4 = document.getElementById('projecttitle').children[2];
+let projects = "Some of the projects I've created throughout my journey.Take a look by clicking the /*links*/ below each project!";
+
 function clearGraphic() {
     nameCounter = 0;
     document.getElementById('titlegraphic').classList.remove('cppgraphic');
@@ -181,6 +185,37 @@ function startCPP() {
     document.getElementById('cpptab').classList.add('selectedtab');
     jw = "class jonathanWylie {bool student=true;bool developer=true;bool camelCaseEnthusiast=true}";
     nameTimer = setInterval(animateCPP, 35);
+}
+
+let titleCounter = 0;
+let lastUpdateTime = 0;
+const frameDelay = 20; // ms between updates (adjust as needed)
+
+function animateProjectTitle(timestamp) {
+    if (!lastUpdateTime) lastUpdateTime = timestamp;
+    const elapsed = timestamp - lastUpdateTime;
+
+    if (elapsed >= frameDelay) {
+        lastUpdateTime = timestamp;
+
+        if (titleCounter == projects.length) {
+            c4.innerHTML = c4.innerHTML.slice(0, c4.innerHTML.length);
+            return; // Stop animation
+        } else if (titleCounter < 56) {
+            c3.innerHTML = c3.innerHTML.slice(0, c3.innerHTML.length-1) + (projects[titleCounter] + "_");
+        } else {
+            if (titleCounter == 56) {
+                c3.innerHTML = c3.innerHTML.slice(0, c3.innerHTML.length-1);
+            }
+            c4.innerHTML = c4.innerHTML.slice(0, c4.innerHTML.length-1) + (projects[titleCounter] + "_");
+        }
+        titleCounter++;
+    }
+    requestAnimationFrame(animateProjectTitle);
+}
+
+function startProjectAnimation() {
+    requestAnimationFrame(animateProjectTitle);
 }
 
 startCPP();

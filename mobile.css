@@ -233,23 +233,24 @@ button {
     margin-top: .4vw;
 }
 
-.projecttitle {
+#projecttitle {
     width: auto;
     text-align: center;
-    font-size: 24px;
-    text-decoration: underline;
-    padding-top: 3vw;
-    margin: 16vw 0 -0.5vw 0;
-    border-top: 2px solid #ff685c;
+    font-size: calc(16px + 2.8vw);
+    padding-top: 1.8vw;
+    margin: 0 0 10vw 0;
+    padding-top: 20vw;
+    padding-bottom: 12vw;
+    font-weight: 800;
+    background: #9CDCFE;
+    background: linear-gradient(180deg,rgba(156, 220, 254, 0) 20%, rgba(156, 220, 254, .15) 55%, rgba(156, 220, 254, 0) 90%);
+    font-family: "Source Code Pro", monospace;
 }
 
-.projectareadesc {
-    width: 80vw;
-    padding: 0 10vw 4vw 10vw;
-    text-align: center;
-    margin-bottom: 12vw;
-    border-bottom: 2px solid #ff685c;
-    font-size: 16px;
+#projecttitle p {
+    font-weight: 500;
+    font-size: calc(6px + 0.7vw);
+    height: 14px;
 }
 
 .projectsrow {
