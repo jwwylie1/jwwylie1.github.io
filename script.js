@@ -1,66 +1,5 @@
 //var jw = "jonathanWylie";
-var jw = "var jonathanWylie = {student:true,developer:true,camelCaseEnthusiast:true}"
-var nameCounter = 1;
 var scrolls = [0,0];
-
-function nameAnimation() {
-    if (nameCounter<=3) { // var
-        document.getElementById('titlevar').innerText = jw.slice(0,nameCounter);
-    } else if (nameCounter<=17) { // jonathanWylie
-        if (nameCounter==4) {document.getElementById('titlevar').style.color = '#179fff'}
-        document.getElementById('titlevarname').innerText = jw.slice(3,nameCounter);
-    } else if (nameCounter<=19) { // =
-        if (nameCounter==18) {document.getElementById('titlevarname').style.color = '#dcdcaa'}
-        document.getElementById('titleequals').innerText = jw.slice(17,nameCounter);
-    } else if (nameCounter<=21) { // {
-        document.getElementById('titlebracket1').innerText = jw.slice(19,nameCounter);
-    } else if (nameCounter<=28) { // student
-        if (nameCounter==22) {document.getElementById('titlebracket1').style.color = '#ffcb05'}
-        document.getElementById('titlestruct1').innerText = jw.slice(21,nameCounter);
-        document.getElementById('underscore1').style.display = 'none';
-        document.getElementById('underscore2').style.display = 'inline';
-    } else if (nameCounter==29) { // :
-        document.getElementById('titlestruct1').style.color = '#9cdcfe';
-        document.getElementById('titlecolon1').innerText = jw.slice(28,nameCounter);
-    } else if (nameCounter<=33) {
-        document.getElementById('titleval1').innerText = jw.slice(29,nameCounter);
-    } else if (nameCounter==34) { // ,
-        document.getElementById('titleval1').style.color = '#da70d6';
-        document.getElementById('titlecomma1').innerText = jw.slice(33,nameCounter);
-        document.getElementById('underscore2').style.display = 'none';
-        document.getElementById('underscore3').style.display = 'inline';
-    } else if (nameCounter<=43) { // developer
-        document.getElementById('titlestruct2').innerText = jw.slice(34,nameCounter);
-    } else if (nameCounter==44) {
-        document.getElementById('titlestruct2').style.color = '#9cdcfe';
-        document.getElementById('titlecolon2').innerText = jw.slice(43,nameCounter);
-    } else if (nameCounter<=48) {
-        document.getElementById('titleval2').innerText = jw.slice(44,nameCounter);
-    } else if (nameCounter==49) {
-        document.getElementById('titleval2').style.color = '#da70d6';
-        document.getElementById('titlecomma2').innerText = jw.slice(48,nameCounter);
-        document.getElementById('underscore3').style.display = 'none';
-        document.getElementById('underscore4').style.display = 'inline';
-    } else if (nameCounter<=68) {
-        document.getElementById('titlestruct3').innerText = jw.slice(49,nameCounter);
-    } else if (nameCounter==69) {
-        document.getElementById('titlestruct3').style.color = '#9cdcfe';
-        document.getElementById('titlecolon3').innerText = jw.slice(68,nameCounter);
-    } else if (nameCounter<=73) {
-        document.getElementById('titleval3').innerText = jw.slice(69,nameCounter);
-    } else if (nameCounter==74) {
-        document.getElementById('titleval3').style.color = '#da70d6';
-        document.getElementById('titlebracket2').innerText = jw.slice(73,nameCounter);
-        document.getElementById('underscore4').style.display = 'none';
-        document.getElementById('underscore5').style.display = 'inline';
-    } else {
-        document.getElementById('titlebracket2').style.color = '#ffcb05'
-        document.getElementById('arrows').style.display = 'block';
-        document.getElementById('arrows').classList.add('fadein');
-        clearInterval(nameTimer);
-    }
-    nameCounter += 1;
-}
 
 /*function nameAnimation() { OLD ANIMATION
     if (nameCounter<=13) {
@@ -77,8 +16,6 @@ function nameAnimation() {
     }
     nameCounter += 1;
 }*/
-
-var nameTimer = setInterval(nameAnimation, 35);
 
 function darkenHeader() {
     scrolls[1] = window.scrollY;
@@ -134,7 +71,7 @@ function updateParentHeight() {
     parent.style.height = `${maxHeight}px`;
   }
 
-const experienceObserver = new IntersectionObserver((entries) => {
+/*const experienceObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.children[0].classList.add('pulldown');
@@ -145,7 +82,7 @@ const experienceObserver = new IntersectionObserver((entries) => {
 
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.5 });*/
 
 const projectsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -154,9 +91,9 @@ const projectsObserver = new IntersectionObserver((entries) => {
         entry.target.children[1].classList.add('slideup');
       }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0 });
 
-experienceObserver.observe(document.getElementById('experience'));
+//experienceObserver.observe(document.getElementById('experience'));
 
 document.querySelectorAll('.projectsrow').forEach(el => {
     projectsObserver.observe(el);

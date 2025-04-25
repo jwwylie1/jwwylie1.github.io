@@ -58,13 +58,73 @@ button {
     margin: 20px 0 0 5px;
 }
 
-#titlegraphic {
+.graphicheader {
+    width: 90%;
+    border-bottom: 2px solid #555;
+    height: 60px;
+    margin-top: 30px;
+    line-height: 30px;
+    padding: 0 5vw;
+}
+
+.mylangsmobile {
+    width: 100%;
+    font-family: "Source Code Pro", monospace;
+    color: #6a9955;
+    text-align: center;
+    font-size: calc(8px + 1.2vw);
+}
+
+.mylangs {display:none}
+
+.codetab {
+    float: left;
+    height: 30px;
+    width: 35vw;
+    font-size: calc(6px + .5vw);
+}
+
+.codetab:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+.selectedtab:hover {
+    cursor: pointer;
+    background-color: #555;
+}
+
+.selectedtab {
+    border-bottom: #222;
+    background-color: #555;
+}
+
+.tabimg {
+    height: 60%;
+    margin: 8px 14px 0 8px;
+    float: left;
+}
+
+.cppgraphic {
+    width: 92%;
+    font-size: 4vw;
+    padding-left: 8%;
+    background: #004482;
+    background: linear-gradient(180deg,rgba(0, 68, 130, 0.15) 0%, rgba(0, 68, 130, 0) 100%);
+}
+
+.jsgraphic {
+    width: 90%;
     font-size: 4.5vw;
+    padding-left: 10%;
+    background: #F0DC4E;
+    background: linear-gradient(180deg,rgba(240, 220, 78, 0.15) 0%, rgba(240, 220, 78, 0) 100%);
+}
+
+#titlegraphic {
     line-height: 6vw;
-    width: 80%;
     height: 70vh;
-    padding-top: 30vh;
-    margin-left: 10%;
+    padding-top: 20vh;
     color: white;
     font-family: "Source Code Pro", monospace;
 }
@@ -76,7 +136,9 @@ button {
     border: 2px solid white;
     color: white;
     font-family: "Source Code Pro", monospace;
-    margin: 20vw 0 0 34vw;
+    margin-top: 20vw;
+    position: absolute;
+    left: 44vw;
     display: none;
 }
 

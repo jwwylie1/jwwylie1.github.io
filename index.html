@@ -15,6 +15,7 @@
     <link href="./mobile.css" rel="stylesheet" media="only screen and (max-width:551px)">
     <link href="./animation.css" rel="stylesheet">
     <script src="./script.js" async="true"></script>
+    <script src="./animation.js" async="true"></script>
     <!--FONTS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,6 +68,16 @@
     </header>
     <!--END HEADER | START MAIN PAGE-->
     <!--<div id="titlename"><span id="titlename1"></span><span id="titlename2"></span><span id="underscore">_</span></div>-->
+    <div class="graphicheader">
+        <div class="mylangsmobile">/*my languages*/</div>
+        <div class="mylangs">my languages--&gt;</div>
+        <div class="codetab" id="cpptab" onclick="startCPP()">
+            <img src="./imgs/cpp.svg" class="tabimg">jwylie.cpp
+        </div>
+        <div class="codetab" id="jstab" onclick="startJS()">
+            <img src="./imgs/js.svg" class="tabimg">jwylie.js
+        </div>
+    </div>
     <section id="titlegraphic" class="code"> <!--OPENING ANIMATION-->
         <span id="titlevar"></span>
         <span id="titlevarname"></span>
@@ -74,24 +85,29 @@
         <span id="titlebracket1"></span>
         <span id="underscore1">_</span>
         <br/>&nbsp;
+        <span id="titletype1"></span>
         <span id="titlestruct1"></span>
         <span id="titlecolon1"></span>
         <span id="titleval1"></span>
         <span id="titlecomma1"></span>
         <span id="underscore2" style="display:none">_</span>
         <br/>&nbsp;
+        <span id="titletype2"></span>
         <span id="titlestruct2"></span>
         <span id="titlecolon2"></span>
         <span id="titleval2"></span>
         <span id="titlecomma2"></span>
         <span id="underscore3" style="display:none">_</span>
         <br/>&nbsp;
+        <span id="titletype3"></span>
         <span id="titlestruct3"></span>
         <span id="titlecolon3"></span>
         <span id="titleval3"></span>
+        <span id="titlecomma3"></span>
         <span id="underscore4" style="display:none">_</span>
         <br/>
         <span id="titlebracket2"></span>
+        <span id="titlecomma4"></span>
         <span id="underscore5" style="display:none" class="blinking">_</span><br/>
         <button onclick="scrollToAboutMe()" id="arrows">
             <img src="./imgs/downs.svg" class="downs">
@@ -116,7 +132,7 @@
         </a>
     </section>
     <!--END ABOUT ME | START OF EXPERIENCE-->
-    <h1 class="projecttitle code">What I've Been Up To</h1>
+    <!--<h1 class="projecttitle code">What I've Been Up To</h1>
     <p class="projectareadesc">A look at some of my experiences so far.<br/>
         I am always looking for new opportunities to gain valuable experience!</p>
     <section id="experience">
@@ -142,7 +158,7 @@
                 camp for teens and young adults with Autism Spectrum Disorder.
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!--END EXPERIENCE | START OF PROJECTS-->
     <section id="projects">
