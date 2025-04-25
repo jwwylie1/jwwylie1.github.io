@@ -46,18 +46,26 @@ button:hover, a:hover {
 }
 
 .headername, .headercontact {
-    font-size: 1.7vw;
-    text-align: center;
-    line-height: 60px;
-    width: 19%;
-    padding-left: 1%;
     height: 60px;
     float: left;
+}
+
+.headername {
+    font-size: 2vw;
+    text-align: left;
+    padding-left: 3%;
+    width: 25%;
+    line-height: 80px;
 }
 
 .headercontact {
     color:#6a9955;
     float: right;
+    font-size: 1.7vw;
+    text-align: center;
+    width: 19%;
+    padding-left: 1%;
+    line-height: 60px;
 }
 
 .socialbtn {
@@ -563,4 +571,24 @@ h1 {
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+}
+
+.smallname {
+    animation-name: smallnameANIM;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes smallnameANIM {
+    from {font-size: 2vw; line-height:80px}
+    to {font-size: 1.7vw; line-height:60px}
+}
+
+.bigname {
+    animation-name: bignameANIM;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes bignameANIM {
+    from {font-size: 1.7vw; line-height:60px}
+    to {font-size: 2vw; line-height:80px}
 }

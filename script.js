@@ -22,9 +22,13 @@ function darkenHeader() {
     if (scrolls[1] > 0 && scrolls[0] == 0) {
         document.getElementById('header').classList.remove('lightenheader');
         document.getElementById('header').classList.add('darkenheader');
+        document.getElementById('header').children[0].classList.remove('bigname');
+        document.getElementById('header').children[0].classList.add('smallname');
     } else if (scrolls[1] == 0) {
         document.getElementById('header').classList.remove('darkenheader');
         document.getElementById('header').classList.add('lightenheader');
+        document.getElementById('header').children[0].classList.remove('smallname');
+        document.getElementById('header').children[0].classList.add('bigname');
     }
     scrolls[0] = scrolls[1];
 }
