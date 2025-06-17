@@ -154,6 +154,12 @@ button:hover, a:hover {
     height: 85vh;
     padding-top: 10vh;
     color: white;
+    tab-size: 3;
+}
+
+#titlegraphic span {
+    float: left;
+    white-space: pre;
 }
 
 .cppgraphic {
@@ -168,6 +174,13 @@ button:hover, a:hover {
     padding-left: 25%;
     background: #F0DC4E;
     background: linear-gradient(180deg,rgba(240, 220, 78, 0.15) 0%, rgba(240, 220, 78, 0) 100%);
+}
+
+.pygraphic {
+    width: 82%;
+    padding-left: 18%;
+    background: #3776AB;
+    background: linear-gradient(180deg,rgba(55, 118, 171, 0.15) 0%, rgba(55, 118, 171, 0) 100%);
 }
 
 #arrows {
@@ -245,9 +258,23 @@ button:hover, a:hover {
 
 #experience {
     margin-left: 10vw;
+    margin-bottom: 10vw;
     position: relative;
     font-size: 18px;
     height: 1vw;
+}
+
+#experiencetitle {
+    width: auto;
+    text-align: center;
+    font-size: calc(16px + 2.8vw);
+    padding-top: 1.8vw;
+    margin: 8vw 0 6vw 0;
+    padding-bottom: 4vw;
+    font-weight: 800;
+    background: #9CDCFE;
+    background: linear-gradient(180deg,rgba(156, 220, 254, 0) 15%, rgb(0, 68, 130, 0.15) 50%, rgba(156, 220, 254, 0) 85%);
+    font-family: "Source Code Pro", monospace;
 }
 
 h1 {
@@ -269,7 +296,7 @@ h1 {
     content: '';
     position: absolute;
     top: 0;
-    left: 44.25%;
+    left: calc(40vw - 6px);
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -280,7 +307,7 @@ h1 {
     content: '';
     position: absolute;
     top: 98%;
-    left: 44.25%;
+    left: calc(40vw - 6px);
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -292,7 +319,7 @@ h1 {
 #experienceline { /*line*/
     position: absolute;
     top: 0;
-    left: 40vw;
+    left: calc(40vw - 1px);
     width: 2px;
     height: 0%;
     background: white;
@@ -337,17 +364,17 @@ h1 {
 
 .pulldown {
     animation-name: pulldownANIM;
-    animation-duration: 2s;
+    animation-duration: 1.2s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
 
 .blendin {
     animation-name: blendinANIM;
-    animation-duration: 2s;
+    animation-duration: 1.2s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 1.2s;
 }
 
 .resumelink:hover {opacity: 0.7}
@@ -393,7 +420,7 @@ h1 {
     font-family: "Source Code Pro", monospace;
 }
 
-#projecttitle p {
+#projecttitle p, #experiencetitle p {
     font-weight: 500;
     font-size: calc(8px + 0.8vw);
     height: 14px;
@@ -561,7 +588,7 @@ h1 {
 
 .slideup {
     animation-name: slideupANIM;
-    animation-duration: 1s;
+    animation-duration: 1.2s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }

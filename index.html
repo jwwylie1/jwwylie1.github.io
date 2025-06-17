@@ -77,6 +77,9 @@
         <div class="codetab" id="jstab" onclick="startJS()">
             <img src="./imgs/js.svg" class="tabimg">jwylie.js
         </div>
+        <div class="codetab" id="pytab" onclick="startPY()">
+            <img src="./imgs/py.png" class="tabimg">jwylie.py
+        </div>
     </div>
     <section id="titlegraphic" class="code"> <!--OPENING ANIMATION-->
         <span id="titlevar"></span>
@@ -85,7 +88,16 @@
         <span id="titlebracket1"></span>
         <span id="underscore1">_</span>
         <br/>&nbsp;
+        <span id="titledef" class="pyline"></span>
+        <span Id="titleinit" class="pyline"></span>
+        <span id="titleopen" class="pyline"></span>
+        <span id="titleself" class="pyline"></span>
+        <span id="titleclose" class="pyline"></span>
+        <span id="titlecolon" class="pyline"></span>
+        <span id="underscorepy"  class="pyline" style="display:none">_</span>
+        <br id="pybreak"/>&nbsp;
         <span id="titletype1"></span>
+        <span id="titledot1"></span>
         <span id="titlestruct1"></span>
         <span id="titlecolon1"></span>
         <span id="titleval1"></span>
@@ -93,6 +105,7 @@
         <span id="underscore2" style="display:none">_</span>
         <br/>&nbsp;
         <span id="titletype2"></span>
+        <span id="titledot2"></span>
         <span id="titlestruct2"></span>
         <span id="titlecolon2"></span>
         <span id="titleval2"></span>
@@ -100,6 +113,7 @@
         <span id="underscore3" style="display:none">_</span>
         <br/>&nbsp;
         <span id="titletype3"></span>
+        <span id="titledot3"></span>
         <span id="titlestruct3"></span>
         <span id="titlecolon3"></span>
         <span id="titleval3"></span>
@@ -119,7 +133,7 @@
             <img src="./imgs/me.jpg" class="mephoto">
             <div id="mebanner" class="mebanner code">About Me</div>
             <div class="aboutmedesc">
-                My name is Jonathan Wylie and I am a freshman studying <span style='color:#dcdcaa'>computer science</span> at the
+                My name is Jonathan Wylie and I am a sophomore studying <span style='color:#dcdcaa'>computer science</span> at the
                 <span style="color:#FFCB05">University of Michigan College of Engineering</span>. I plan to pursue a double minor in
                 <span style="color:#179fff">mathematics</span> and <span style="color:#c77b79">entrepreneurship</span> in addition to my major.
                 I am currently looking for summer internships in software engineering to gain valuable experience outside of my formal education.
@@ -132,9 +146,13 @@
         </a>
     </section>
     <!--END ABOUT ME | START OF EXPERIENCE-->
-    <!--<h1 class="projecttitle code">What I've Been Up To</h1>
+    <!--<h1 id="experiencetitle" class="projecttitle code">What I've Been Up To</h1>
     <p class="projectareadesc">A look at some of my experiences so far.<br/>
-        I am always looking for new opportunities to gain valuable experience!</p>
+        I am always looking for new opportunities to gain valuable experience!</p>-->
+    <div id="experiencetitle">What I've Been Up To<br/>
+        <p>A look at some of my experiences so far.</p>
+        <p>I am always looking for new opportunities to gain valuable experience!</p>
+    </div>
     <section id="experience">
         <div id="experienceline"></div>
         <div class="companyctr kpit">
@@ -143,11 +161,13 @@
         <div class="companyctr parc">
             <img src="./imgs/parclife.jpg" class="companylogo">
         </div>
-        <div class="expHalf" style="text-align:right">
+        <div class="expHalf expLeft" style="text-align:right">
             <div class="expdesc kpitdesc">
                 <b class="companytitle">KPIT Technologies Inc.</b><br/>
                 <b>Intern&emsp;|&emsp;2025</b><br/>
-                TO BE FILLED IN LATER.
+                Developing a Python-based tool to intelligently merge electrical diagrams
+                of automotive control modules, significantly improving the efficiency of
+                electrical system documentation by automating the merging process.
             </div>
         </div>
         <div class="expHalf expRight">
@@ -158,7 +178,7 @@
                 camp for teens and young adults with Autism Spectrum Disorder.
             </div>
         </div>
-    </section>-->
+    </section>
 
     <!--END EXPERIENCE | START OF PROJECTS-->
     <section id="projects">

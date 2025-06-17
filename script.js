@@ -75,7 +75,7 @@ function updateParentHeight() {
     parent.style.height = `${maxHeight}px`;
   }
 
-/*const experienceObserver = new IntersectionObserver((entries) => {
+const experienceObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.children[0].classList.add('pulldown');
@@ -86,7 +86,7 @@ function updateParentHeight() {
 
       }
     });
-  }, { threshold: 0.5 });*/
+  }, { threshold: 0.5 });
 
 const projectsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -97,7 +97,7 @@ const projectsObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0 });
 
-//experienceObserver.observe(document.getElementById('experience'));
+experienceObserver.observe(document.getElementById('experience'));
 
 document.querySelectorAll('.projectsrow').forEach(el => {
     projectsObserver.observe(el);
@@ -113,6 +113,10 @@ const headerObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0 });
 
 document.querySelectorAll('#projecttitle').forEach(el => {
+    headerObserver.observe(el);
+});
+
+document.querySelectorAll('#experiencetitle').forEach(el => {
     headerObserver.observe(el);
 });
 
