@@ -246,7 +246,7 @@ button:hover, a:hover {
 }
 
 .resumebtn {
-    width: 15vw;
+    padding: 0 2vw;
     height: 4vw;
     line-height: 4vw;
     border: 1px solid #9cdcfe;
