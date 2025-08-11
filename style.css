@@ -285,7 +285,7 @@ h1 {
 }
 
 .expHalf {
-    width: 34vw;
+    width: 40vw;
     display: inline-block;
     position: absolute;
     padding: 0 3vw;
@@ -314,6 +314,7 @@ h1 {
     background-color: white;
 }
 
+.expLeft {left: -6vw;}
 .expRight {left: 40vw;}
 
 #experienceline { /*line*/
@@ -343,14 +344,14 @@ h1 {
 }
 
 .kpit {top: 3.5vw; background-color: #b0ff44}
-.parc {top: 16vw; background-color: white}
+.parc {top: 19vw; background-color: white}
 
 .companytitle {
     font-size: 26px;
 }
 
 .kpitdesc {margin-top: 4vw;}
-.parcdesc {margin-top: 16.8vw;}
+.parcdesc {margin-top: 19.8vw;}
 
 @keyframes pulldownANIM {
     from {height: 0}
