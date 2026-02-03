@@ -163,22 +163,22 @@ button:hover, a:hover {
 }
 
 .cppgraphic {
-    width: 82%;
-    padding-left: 18%;
+    width: 72%;
+    padding-left: 28%;
     background: #004482;
     background: linear-gradient(180deg,rgba(0, 68, 130, 0.15) 0%, rgba(0, 68, 130, 0) 100%);
 }
 
 .jsgraphic {
-    width: 75%;
-    padding-left: 25%;
+    width: 72%;
+    padding-left: 28%;
     background: #F0DC4E;
     background: linear-gradient(180deg,rgba(240, 220, 78, 0.15) 0%, rgba(240, 220, 78, 0) 100%);
 }
 
 .pygraphic {
-    width: 82%;
-    padding-left: 18%;
+    width: 76%;
+    padding-left: 24%;
     background: #3776AB;
     background: linear-gradient(180deg,rgba(55, 118, 171, 0.15) 0%, rgba(55, 118, 171, 0) 100%);
 }

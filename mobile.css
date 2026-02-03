@@ -106,25 +106,25 @@ button {
 }
 
 .cppgraphic {
-    width: 92%;
-    font-size: 4vw;
-    padding-left: 8%;
+    width: 85%;
+    font-size: 4.5vw;
+    padding-left: 15%;
     background: #004482;
     background: linear-gradient(180deg,rgba(0, 68, 130, 0.15) 0%, rgba(0, 68, 130, 0) 100%);
 }
 
 .jsgraphic {
-    width: 90%;
-    font-size: 4.5vw;
-    padding-left: 10%;
+    width: 85%;
+    font-size: 4.9vw;
+    padding-left: 15%;
     background: #F0DC4E;
     background: linear-gradient(180deg,rgba(240, 220, 78, 0.15) 0%, rgba(240, 220, 78, 0) 100%);
 }
 
 .pygraphic {
-    width: 94%;
-    font-size: 3.8vw;
-    padding-left: 6%;
+    width: 88%;
+    font-size: 4.5vw;
+    padding-left: 12%;
     background: #3776AB;
     background: linear-gradient(180deg,rgba(55, 118, 171, 0.15) 0%, rgba(55, 118, 171, 0) 100%);
 }
