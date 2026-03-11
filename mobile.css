@@ -225,7 +225,6 @@ button {
     margin-bottom: 10vw;
     position: relative;
     font-size: calc(8px + 1.2vw);
-    height: 1vw;
 }
 
 #experiencetitle {
@@ -236,7 +235,6 @@ button {
     margin: 20vw 0 6vw 0;
     padding-bottom: 4vw;
     font-weight: 800;
-    background: #9CDCFE;
     background: linear-gradient(180deg,rgba(156, 220, 254, 0) 15%, rgb(0, 68, 130, 0.15) 50%, rgba(156, 220, 254, 0) 85%);
     font-family: "Source Code Pro", monospace;
 }
@@ -248,96 +246,92 @@ h1 {
     font-size: calc(14px + 1.6vw);
 }
 
-.expHalf {
-    width: 40vw;
-    display: inline-block;
-    position: absolute;
-    padding: 0 2vw;
+/* Timeline Layout Mobile Grid */
+.timeline-row {
+    display: flex;
+    align-items: flex-start;
+    width: 98vw;
+    margin-bottom: 12vw;
     opacity: 0;
 }
 
-#experience::before { /*top dot*/
-    content: '';
-    position: absolute;
-    top: 0;
-    left: calc(49vw - 6px);
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: white;
+.timeline-left {
+    width: 45vw;
+    padding-right: 2vw;
+    text-align: right;
+    box-sizing: border-box;
 }
 
-#experience::after { /* bottom dot*/
-    content: '';
-    position: absolute;
-    top: 98%;
-    left: calc(49vw - 6px);
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: white;
+.timeline-right {
+    width: 45vw;
+    padding-left: 2vw;
+    text-align: left;
+    box-sizing: border-box;
 }
 
-.expRight {left: 54vw;}
-
-#experienceline { /*line*/
-    position: absolute;
-    top: 0;
-    left: calc(49vw - 1px);
-    width: 2px;
-    height: 0%;
-    background: white;
-}
-
-.companyctr {
-    position: absolute;
-    left: calc(45vw - 2px);
+.timeline-center {
     width: 8vw;
     height: 8vw;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid white;
     background-color: #222;
-    opacity: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
-.companylogo {
-    width: 90%;
-    margin: 5%;
+/* Mobile Center Line & Dots */
+#experienceline { 
+    position: absolute;
+    top: 0;
+    left: calc(49vw - 1px);
+    width: 2px;
+    height: 0%;
+    background: white;
+    z-index: 0;
 }
 
-.kpit {top: 8vw; background-color: #b0ff44}
-.parc {top: 50vw; background-color: white}
-
-.companytitle {
-    font-size: calc(11px + 1.2vw);
+#experience::before, #experience::after {
+    content: '';
+    position: absolute;
+    left: calc(49vw - 6px);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
 }
+#experience::before { top: 0; }
+#experience::after { bottom: 0; top: auto; }
 
-.kpitdesc {margin-top: 9vw;}
-.parcdesc {margin-top: 51vw;}
+/* Company specific styling */
+.companylogo { width: 90%; }
+.companytitle { font-size: calc(11px + 1.2vw); }
 
+.xpo { background-color: white; }
+.xpo, .xpodesc {margin-top: 2rem;}
+.kpit { background-color: #b0ff44; }
+.kpit, .kpitdesc {margin-top: -12rem;}
+.parc { background-color: white; }
+.parc, .parcdesc {margin-top: -18rem;}
+
+/* Keep Mobile Animations */
 @keyframes pulldownANIM {
     from {height: 0}
     to {height: 100%}
 }
-
 @keyframes blendinANIM {
     from {opacity: 0}
     to {opacity: 1}
 }
-
 .pulldown {
-    animation-name: pulldownANIM;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+    animation: pulldownANIM 1.2s ease-out forwards;
 }
-
 .blendin {
-    animation-name: blendinANIM;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+    animation: blendinANIM 1.2s ease-out forwards;
     animation-delay: 1.2s;
 }
 
