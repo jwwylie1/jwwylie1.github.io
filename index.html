@@ -29,437 +29,496 @@
     rel="stylesheet">
   <!--FONTS END-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jonathan Wylie</title>
   <link rel="icon" href="./imgs/JW_icon.png">
+
+  <title>Jonathan Wylie | Software Engineer & CS Student</title>
+
+  <meta name="title" content="Jonathan Wylie | Software Engineer & CS Student">
+  <meta name="description"
+    content="Portfolio of Jonathan Wylie, a Computer Science student at the University of Michigan specializing in C/C++, Python, JavaScript, and full-stack development.">
+  <meta name="author" content="Jonathan Wylie">
+  <meta name="keywords"
+    content="Jonathan Wylie, Software Engineer, Computer Science, University of Michigan, Full Stack Developer, React, C++, Python">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jwylie.dev/">
+  <meta property="og:title" content="Jonathan Wylie | Software Engineer">
+  <meta property="og:description"
+    content="Portfolio of Jonathan Wylie, a CS student at UMich. Explore my software engineering projects and experience.">
+  <meta property="og:image" content="https://jwylie.dev/imgs/me.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://jwylie.dev/">
+  <meta property="twitter:title" content="Jonathan Wylie | Software Engineer">
+  <meta property="twitter:description"
+    content="Portfolio of Jonathan Wylie, a CS student at UMich. Explore my software engineering projects and experience.">
+  <meta property="twitter:image" content="https://jwylie.dev/imgs/me.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Jonathan Wylie",
+    "url": "https://jwylie.dev/",
+    "image": "https://jwylie.dev/imgs/me.jpg",
+    "jobTitle": "Software Engineering Student",
+    "description": "Computer Science student at the University of Michigan College of Engineering, with minors in mathematics and entrepreneurship.",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Michigan"
+    },
+    "knowsAbout": ["C++", "Python", "JavaScript", "React", "Node.js", "Full-stack development"],
+    "sameAs": [
+      "https://github.com/jwwylie1",
+      "https://www.linkedin.com/in/jonathan-wylie-4138332b8/"
+    ]
+  }
+  </script>
 </head>
 
 <body onscroll="darkenHeader()">
-    <!--HEADER-->
-    <header id="header">
-        <div class="headername code">Jonathan Wylie</div>
-        <a href="https://github.com/jwwylie1" target="_blank">
-            <div class="socialbtn" onmouseover="socialover('github')" onmouseout="socialout('github')" id="githubbtn">
-                <div class="socialtop">
-                    <img src="./imgs/github.svg" class="socialsvgtop">
-                </div>
-                <div class="socialbottom" style="background-color: #000">
-                    <img src="./imgs/github.svg" class="socialsvgbottom">
-                    <div class="socialdesc">GitHub</div>
-                </div>
-            </div>
-        </a>
-        <a href="https://www.linkedin.com/in/jonathan-wylie-4138332b8/" target="_blank">
-            <div class="socialbtn" onmouseover="socialover('linkedin')" onmouseout="socialout('linkedin')" id="linkedinbtn">
-                <div class="socialtop">
-                    <img src="./imgs/linkedin.svg" class="socialsvgtop">
-                </div>
-                <div class="socialbottom" style="background-color: #0077b5">
-                    <img src="./imgs/linkedin.svg" class="socialsvgbottom">
-                    <div class="socialdesc" style="margin-top:-3px">LinkedIn</div>
-                </div>
-            </div>
-        </a>
-        <a onclick="copyToClipboard()">
-            <div class="socialbtn" onmouseover="socialover('email')" onmouseout="socialout('email')" id="emailbtn">
-                <div class="socialtop">
-                    <img src="./imgs/envelope.svg" class="socialsvgtop">
-                </div>
-                <div class="socialbottom" style="background-color: #d7493b">
-                    <img src="./imgs/envelope.svg" class="socialsvgbottom">
-                    <div class="socialdesc" style="margin-top:-3px">Email</div>
-                </div>
-            </div>
-        </a>
-        <div class="headercontact code">//contact me--&gt;</div>
-    </header>
-    <!--END HEADER | START MAIN PAGE-->
-    <!--<div id="titlename"><span id="titlename1"></span><span id="titlename2"></span><span id="underscore">_</span></div>-->
+  <!--HEADER-->
+  <header id="header">
+    <div class="headername code">Jonathan Wylie</div>
+    <a href="https://github.com/jwwylie1" target="_blank">
+      <div class="socialbtn" onmouseover="socialover('github')" onmouseout="socialout('github')" id="githubbtn">
+        <div class="socialtop">
+          <img src="./imgs/github.svg" class="socialsvgtop" alt="GitHub Logo">
+        </div>
+        <div class="socialbottom" style="background-color: #000">
+          <img src="./imgs/github.svg" class="socialsvgbottom" alt="GitHub Logo">
+          <div class="socialdesc">GitHub</div>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.linkedin.com/in/jonathan-wylie-4138332b8/" target="_blank">
+      <div class="socialbtn" onmouseover="socialover('linkedin')" onmouseout="socialout('linkedin')" id="linkedinbtn">
+        <div class="socialtop">
+          <img src="./imgs/linkedin.svg" class="socialsvgtop" alt="LinkedIn Logo">
+        </div>
+        <div class="socialbottom" style="background-color: #0077b5">
+          <img src="./imgs/linkedin.svg" class="socialsvgbottom" alt="LinkedIn Logo">
+          <div class="socialdesc" style="margin-top:-3px">LinkedIn</div>
+        </div>
+      </div>
+    </a>
+    <a onclick="copyToClipboard()">
+      <div class="socialbtn" onmouseover="socialover('email')" onmouseout="socialout('email')" id="emailbtn">
+        <div class="socialtop">
+          <img src="./imgs/envelope.svg" class="socialsvgtop" alt="Email Me">
+        </div>
+        <div class="socialbottom" style="background-color: #d7493b">
+          <img src="./imgs/envelope.svg" class="socialsvgbottom" alt="Email Me">
+          <div class="socialdesc" style="margin-top:-3px">Email</div>
+        </div>
+      </div>
+    </a>
+    <div class="headercontact code">//contact me--&gt;</div>
+  </header>
+  <!--END HEADER | START MAIN PAGE-->
+  <!--<div id="titlename"><span id="titlename1"></span><span id="titlename2"></span><span id="underscore">_</span></div>-->
+  <main>
     <div class="graphicheader">
-        <div class="mylangsmobile">/*my languages*/</div>
-        <div class="mylangs">my languages--&gt;</div>
-        <div class="codetab" id="cpptab" onclick="startCPP()">
-            <img src="./imgs/cpp.svg" class="tabimg">jwylie.cpp
-        </div>
-        <div class="codetab" id="jstab" onclick="startJS()">
-            <img src="./imgs/js.svg" class="tabimg">jwylie.js
-        </div>
-        <div class="codetab" id="pytab" onclick="startPY()">
-            <img src="./imgs/py.svg" class="tabimg">jwylie.py
-        </div>
+      <div class="mylangsmobile">/*my languages*/</div>
+      <div class="mylangs">my languages--&gt;</div>
+      <div class="codetab" id="cpptab" onclick="startCPP()">
+        <img src="./imgs/cpp.svg" class="tabimg" alt="C++ Logo">jwylie.cpp
+      </div>
+      <div class="codetab" id="jstab" onclick="startJS()">
+        <img src="./imgs/js.svg" class="tabimg" alt="JavaScript Logo">jwylie.js
+      </div>
+      <div class="codetab" id="pytab" onclick="startPY()">
+        <img src="./imgs/py.svg" class="tabimg" alt="Python Logo">jwylie.py
+      </div>
     </div>
     <section id="titlegraphic" class="code"> <!--OPENING ANIMATION-->
-        <span id="titlevar"></span>
-        <span id="titlevarname"></span>
-        <span id="titleequals"></span>
-        <span id="titlebracket1"></span>
-        <span id="underscore1">_</span>
-        <br/>&nbsp;
-        <span id="titledef" class="pyline"></span>
-        <span Id="titleinit" class="pyline"></span>
-        <span id="titleopen" class="pyline"></span>
-        <span id="titleself" class="pyline"></span>
-        <span id="titleclose" class="pyline"></span>
-        <span id="titlecolon" class="pyline"></span>
-        <span id="underscorepy"  class="pyline" style="display:none">_</span>
-        <br id="pybreak"/>&nbsp;
-        <span id="titletype1"></span>
-        <span id="titledot1"></span>
-        <span id="titlestruct1"></span>
-        <span id="titlecolon1"></span>
-        <span id="titleval1"></span>
-        <span id="titlecomma1"></span>
-        <span id="underscore2" style="display:none">_</span>
-        <br/>&nbsp;
-        <span id="titletype2"></span>
-        <span id="titledot2"></span>
-        <span id="titlestruct2"></span>
-        <span id="titlecolon2"></span>
-        <span id="titleval2"></span>
-        <span id="titlecomma2"></span>
-        <span id="underscore3" style="display:none">_</span>
-        <br/>&nbsp;
-        <span id="titletype3"></span>
-        <span id="titledot3"></span>
-        <span id="titlestruct3"></span>
-        <span id="titlecolon3"></span>
-        <span id="titleval3"></span>
-        <span id="titlecomma3"></span>
-        <span id="underscore4" style="display:none">_</span>
-        <br/>
-        <span id="titlebracket2"></span>
-        <span id="titlecomma4"></span>
-        <span id="underscore5" style="display:none" class="blinking">_</span><br/>
-        <button onclick="scrollToAboutMe()" id="arrows">
-            <img src="./imgs/downs.svg" class="downs">
-        </button>
+      <span id="titlevar"></span>
+      <span id="titlevarname"></span>
+      <span id="titleequals"></span>
+      <span id="titlebracket1"></span>
+      <span id="underscore1">_</span>
+      <br />&nbsp;
+      <span id="titledef" class="pyline"></span>
+      <span Id="titleinit" class="pyline"></span>
+      <span id="titleopen" class="pyline"></span>
+      <span id="titleself" class="pyline"></span>
+      <span id="titleclose" class="pyline"></span>
+      <span id="titlecolon" class="pyline"></span>
+      <span id="underscorepy" class="pyline" style="display:none">_</span>
+      <br id="pybreak" />&nbsp;
+      <span id="titletype1"></span>
+      <span id="titledot1"></span>
+      <span id="titlestruct1"></span>
+      <span id="titlecolon1"></span>
+      <span id="titleval1"></span>
+      <span id="titlecomma1"></span>
+      <span id="underscore2" style="display:none">_</span>
+      <br />&nbsp;
+      <span id="titletype2"></span>
+      <span id="titledot2"></span>
+      <span id="titlestruct2"></span>
+      <span id="titlecolon2"></span>
+      <span id="titleval2"></span>
+      <span id="titlecomma2"></span>
+      <span id="underscore3" style="display:none">_</span>
+      <br />&nbsp;
+      <span id="titletype3"></span>
+      <span id="titledot3"></span>
+      <span id="titlestruct3"></span>
+      <span id="titlecolon3"></span>
+      <span id="titleval3"></span>
+      <span id="titlecomma3"></span>
+      <span id="underscore4" style="display:none">_</span>
+      <br />
+      <span id="titlebracket2"></span>
+      <span id="titlecomma4"></span>
+      <span id="underscore5" style="display:none" class="blinking">_</span><br />
+      <button onclick="scrollToAboutMe()" id="arrows">
+        <img src="./imgs/downs.svg" class="downs" alt="v">
+      </button>
     </section>
     <!--END MAIN PAGE | START ABOUT ME-->
     <section id="aboutme" class="aboutme">
-        <div class="photoarea">
-            <img src="./imgs/me.jpg" class="mephoto">
-            <div id="mebanner" class="mebanner code">About Me</div>
-            <div class="aboutmedesc">
-                My name is Jonathan Wylie and I am a junior studying <span style='color:#dcdcaa'>computer science</span> at the
-                <span style="color:#FFCB05">University of Michigan College of Engineering</span>. I am also pursuing a double minor in
-                <span style="color:#179fff">mathematics</span> and <span style="color:#c77b79">entrepreneurship</span> in addition to my major.
-                I am currently looking for summer internships in software engineering to gain valuable experience outside of my formal education.
-                At the moment, I am mainly learning and using <span style="color:#047bfb">C</span>/<span style="color:#047bfb">C++</span>, <span style="color:#ffe873">Python</span>, and <span style="color:#f7df1e">JavaScript</span>,
-                but I am excited to learn anything for any task.
-            </div>
+      <div class="photoarea">
+        <img src="./imgs/me.jpg" class="mephoto" alt="Headshot of Jonathan Wylie, University of Michigan CS Student">
+        <div id="mebanner" class="mebanner code">About Me</div>
+        <div class="aboutmedesc">
+          My name is Jonathan Wylie and I am a junior studying <span style='color:#dcdcaa'>computer science</span> at the
+          <span style="color:#FFCB05">University of Michigan College of Engineering</span>. I am also pursuing a double
+          minor in
+          <span style="color:#179fff">mathematics</span> and <span style="color:#c77b79">entrepreneurship</span> in
+          addition to my major.
+          I am currently looking for summer internships in software engineering to gain valuable experience outside of my
+          formal education.
+          At the moment, I am mainly learning and using <span style="color:#047bfb">C</span>/<span
+            style="color:#047bfb">C++</span>, <span style="color:#ffe873">Python</span>, and <span
+            style="color:#f7df1e">JavaScript</span>,
+          but I am excited to learn anything for any task.
         </div>
-        <a href="./JonathanWylieResume.pdf" target="_blank" class="resumelink">
-            <button class="resumebtn code">myResume<span style="color:#da70d6">()</span></button>
-        </a>
+      </div>
+      <a href="./JonathanWylieResume.pdf" target="_blank" class="resumelink">
+        <button class="resumebtn code">myResume<span style="color:#da70d6">()</span></button>
+      </a>
     </section>
     <!--END ABOUT ME | START OF EXPERIENCE-->
     <!--<h1 id="experiencetitle" class="projecttitle code">What I've Been Up To</h1>
-    <p class="projectareadesc">A look at some of my experiences so far.<br/>
-        I am always looking for new opportunities to gain valuable experience!</p>-->
-  <div id="experiencetitle">What I've Been Up To<br />
-    <p>A look at some of my experiences so far.</p>
-    <p>I am always looking for new opportunities to gain valuable experience!</p>
-  </div>
-  <section id="experience">
-    <div id="experienceline"></div>
-
-    <div class="timeline-row">
-      <div class="timeline-left">
-        <div class="expdesc kpitdesc">
-          <b class="companytitle">KPIT Technologies Inc.</b><br />
-          <b>Intern&emsp;|&emsp;2025</b><br />
-          Developed a tool that analyzes multiple vehicle control module documents,
-          automatically aligns corresponding sections side-by-side, and highlights
-          differences in their content to streamline technical comparison and review.
-          <br /><br />
-          Developed a Python-based tool to intelligently merge electrical
-          diagrams and vehicle function descriptions of automotive control modules,
-          significantly improved the efficiency of electrical system documentation.
-        </div>
-      </div>
-      <div class="timeline-center companyctr kpit">
-        <img src="./imgs/kpit.jpg" class="companylogo">
-      </div>
-      <div class="timeline-right"></div>
+      <p class="projectareadesc">A look at some of my experiences so far.<br/>
+          I am always looking for new opportunities to gain valuable experience!</p>-->
+    <div id="experiencetitle">What I've Been Up To<br />
+      <p>A look at some of my experiences so far.</p>
+      <p>I am always looking for new opportunities to gain valuable experience!</p>
     </div>
+    <section id="experience">
+      <div id="experienceline"></div>
 
-    <div class="timeline-row">
-      <div class="timeline-left"></div>
-      <div class="timeline-center companyctr parc">
-        <img src="./imgs/parclife.jpg" class="companylogo">
-      </div>
-      <div class="timeline-right">
-        <div class="expdesc parcdesc">
-          <b class="companytitle">PARClife</b><br />
-          <b>Peer Mentor&emsp;|&emsp;2023&ndash;2025</b><br />
-          Provided social, behavioral, and academic support to teens and young adults
-          with autism spectrum disorder at after-school and summer programs.
-          Developed and implemented individualized strategies to ensure each mentee's success.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--END EXPERIENCE | START OF PROJECTS-->
-  <section id="projects">
-    <div id="projecttitle">Things I've Built<br />
-      <p></p>
-      <p></p>
-    </div>
-    <!--CourseCalc AI-->
-    <section class="projectsrow">
-      <div class="projectshowcase">
-        <video width="100%" controls autoplay muted class="projectvideo">
-          <source src="./imgs/coursecalcaidemo.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="projectdescbox">
-        <div class="projectname">CourseCalc AI - Syllabus to Grade Calculator<span class="projectyear nobold white">2026</span></div>
-        <div class="projectwords">A full-stack web application that eliminates the tedious process of manually tracking college grades. Users simply paste their course syllabus, and the app instantly generates a fully customized, interactive grade calculator.
-          <br />
-          <div class="divider"></div>
-          Behind the scenes, the application leverages the Gemini LLM API to process unstructured syllabus text. Using carefully engineered prompts, it identifies grading categories, weights, and assignments, converting the raw text into highly structured JSON data to dynamically build the frontend calculator.
-          <br />
-          <div class="divider"></div>
-          To make the tool functional for a full semester, the app utilizes Supabase (PostgreSQL) as a Backend-as-a-Service (BaaS). It handles secure user authentication and persistent state management, allowing students to log in, save multiple course calculators to their profile, and update their grades via full CRUD operations as the semester progresses.
-          <p class="projectlink code"><a href="https://github.com/jwwylie1/coursecalc-ai/" target="_blank">/* Github Repo
-              */</b></a></p>
-          <p class="projectlink code"><a href="https://coursecalc.app" target="_blank">/* Live Link */</b></a></p>
-          </div>
-        <div class="projectlangs">
-          <div class="tooltip"><img src="./imgs/react.png" class="projecticon">
-            <span class="tooltiptext">React</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/gemini.png" class="projecticon">
-            <span class="tooltiptext">Gemini API</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/supabase.webp" class="projecticon">
-            <span class="tooltiptext">Supabase</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/postgresql.png" class="projecticon">
-            <span class="tooltiptext">PostgreSQL</span>
+      <div class="timeline-row">
+        <div class="timeline-left">
+          <div class="expdesc kpitdesc">
+            <b class="companytitle">KPIT Technologies Inc.</b><br />
+            <b>Intern&emsp;|&emsp;2025</b><br />
+            Developed a tool that analyzes multiple vehicle control module documents,
+            automatically aligns corresponding sections side-by-side, and highlights
+            differences in their content to streamline technical comparison and review.
+            <br /><br />
+            Developed a Python-based tool to intelligently merge electrical
+            diagrams and vehicle function descriptions of automotive control modules,
+            significantly improved the efficiency of electrical system documentation.
           </div>
         </div>
+        <div class="timeline-center companyctr kpit">
+          <img src="./imgs/kpit.jpg" class="companylogo" alt="KPIT Technologies Logo">
+        </div>
+        <div class="timeline-right"></div>
       </div>
-      <div class="projectshowcasemobile">
-        <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
-          <source src="./imgs/coursecalcaidemo.mp4" type="video/mp4">
-        </video>
+
+      <div class="timeline-row">
+        <div class="timeline-left"></div>
+        <div class="timeline-center companyctr parc">
+          <img src="./imgs/parclife.jpg" class="companylogo" alt="PARClife logo">
+        </div>
+        <div class="timeline-right">
+          <div class="expdesc parcdesc">
+            <b class="companytitle">PARClife</b><br />
+            <b>Peer Mentor&emsp;|&emsp;2023&ndash;2025</b><br />
+            Provided social, behavioral, and academic support to teens and young adults
+            with autism spectrum disorder at after-school and summer programs.
+            Developed and implemented individualized strategies to ensure each mentee's success.
+          </div>
+        </div>
       </div>
     </section>
 
-    <!--Pureformance-->
-    <!--<section class="projectsrow">
-            <div class="projectshowcase">
-                <video width="100%" controls autoplay muted class="projectvideo">
-                    <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
-                </video>
+    <!--END EXPERIENCE | START OF PROJECTS-->
+    <section id="projects">
+      <div id="projecttitle">Things I've Built<br />
+        <p></p>
+        <p></p>
+      </div>
+      <!--CourseCalc AI-->
+      <section class="projectsrow">
+        <div class="projectshowcase">
+          <video width="100%" controls autoplay muted class="projectvideo">
+            <source src="./imgs/coursecalcaidemo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="projectdescbox">
+          <div class="projectname">CourseCalc AI - Syllabus to Grade Calculator<span
+              class="projectyear nobold white">2026</span></div>
+          <div class="projectwords">A full-stack web application that eliminates the tedious process of manually tracking
+            college grades. Users simply paste their course syllabus, and the app instantly generates a fully customized,
+            interactive grade calculator.
+            <br />
+            <div class="divider"></div>
+            Behind the scenes, the application leverages the Gemini LLM API to process unstructured syllabus text. Using
+            carefully engineered prompts, it identifies grading categories, weights, and assignments, converting the raw
+            text into highly structured JSON data to dynamically build the frontend calculator.
+            <br />
+            <div class="divider"></div>
+            To make the tool functional for a full semester, the app utilizes Supabase (PostgreSQL) as a
+            Backend-as-a-Service (BaaS). It handles secure user authentication and persistent state management, allowing
+            students to log in, save multiple course calculators to their profile, and update their grades via full CRUD
+            operations as the semester progresses.
+            <p class="projectlink code"><a href="https://github.com/jwwylie1/coursecalc-ai/" target="_blank">/* Github
+                Repo
+                */</b></a></p>
+            <p class="projectlink code"><a href="https://coursecalc.app" target="_blank">/* Live Link */</b></a></p>
+          </div>
+          <div class="projectlangs">
+            <div class="tooltip"><img src="./imgs/react.png" class="projecticon" alt="ReactJS Logo">
+              <span class="tooltiptext">React</span>
             </div>
-            <div class="projectdescbox">
-                <div class="projectname">Pureformance - Ecommerce Website<span class="projectyear nobold white">2025&ndash;26</span></div>
-                <div class="projectwords">Online home and primary sales channel of Pureformance energy drink. Customers can 
-                    browse the product catalog and view company information, place orders with Stripe integration, and create 
-                    accounts to earn benefits and see past orders.
-                    <br/><div class="divider"></div>
-                    React frontend connects to a Node.js backend and MongoDB database to store account data, products, orders, etc.
-                    Integrations with Redis and Stripe for login caching and secure checkout.
-                    <p class="projectlink code"><a href="https://pureformance-frontend.vercel.app" target="blank">/* Buy Now! */</b></a></p>
-                </div>
-                <div class="projectlangs">
-                    <div class="tooltip"><img src="./imgs/react.png" class="projecticon">
-                        <span class="tooltiptext">React</span>
-                    </div>
-                    <div class="tooltip"><img src="./imgs/nodejs.svg" class="projecticon">
-                        <span class="tooltiptext">Node.js</span>
-                    </div>
-                    <div class="tooltip"><img src="./imgs/mongodb.svg" class="projecticon">
-                        <span class="tooltiptext">MongoDB</span>
-                    </div>
-                    <div class="tooltip"><img src="./imgs/redis.svg" class="projecticon">
-                        <span class="tooltiptext">Redis</span>
-                    </div>
-                    <div class="tooltip"><img src="./imgs/stripe.svg" class="projecticon">
-                        <span class="tooltiptext">Stripe</span>
-                    </div>
-                </div>
+            <div class="tooltip"><img src="./imgs/gemini.png" class="projecticon" alt="Gemini API Logo">
+              <span class="tooltiptext">Gemini API</span>
             </div>
-            <div class="projectshowcasemobile">
-                <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
-                    <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
-                </video>
+            <div class="tooltip"><img src="./imgs/supabase.webp" class="projecticon" alt="Supabase Logo">
+              <span class="tooltiptext">Supabase</span>
             </div>
-        </section> -->
-
-    <!--Pitwall-->
-
-    <section class="projectsrow">
-      <div class="projectshowcase">
-        <video width="100%" controls autoplay muted class="projectvideo">
-          <source src="./imgs/pitwalldemo.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="projectdescbox">
-        <div class="projectname">Pitwall - F1 AI Analysis Tool<span class="projectyear nobold white">2025</span></div>
-        <div class="projectwords">A 2-in-1 tool that provides unique insight into Formula One races.
-          <br />
-          <div class="divider"></div>
-          The radio explainer transcribes radio messages and provides an AI explanation for
-          users just getting into the sport, considering key context in its response. The
-          model was fine-tuned using over 600 radio messages from the 2023 season.
-          <br />
-          <div class="divider"></div>
-          The lap visualizer allows the user to select any two drivers' laps to compare.
-          The drivers' realtime telemetry and racing line are then played out, showing users
-          the fine margins between great and legendary drivers. More technical details are
-          available on the website.
-          <p class="projectlink code"><a href="https://github.com/jwwylie1/pitwall/" target="_blank">/* Github Repo
-              */</b></a></p>
-          <p class="projectlink code"><a href="https://f1-pitwall.vercel.app/" target="_blank">/* Live Link */</b></a></p>
-        </div>
-        <div class="projectlangs">
-          <div class="tooltip"><img src="./imgs/py.svg" class="projecticon">
-            <span class="tooltiptext">Python</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/huggingface.png" class="projecticon">
-            <span class="tooltiptext">HuggingFace</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/react.png" class="projecticon">
-            <span class="tooltiptext">React</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/fastapi.png" class="projecticon">
-            <span class="tooltiptext">FastAPI</span>
+            <div class="tooltip"><img src="./imgs/postgresql.png" class="projecticon" alt="PostgreSQL Logo">
+              <span class="tooltiptext">PostgreSQL</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="projectshowcasemobile">
-        <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
-          <source src="./imgs/pitwalldemo.mp4" type="video/mp4">
-        </video>
+        <div class="projectshowcasemobile">
+          <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
+            <source src="./imgs/coursecalcaidemo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+
+      <!--Pureformance-->
+      <!--<section class="projectsrow">
+              <div class="projectshowcase">
+                  <video width="100%" controls autoplay muted class="projectvideo">
+                      <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
+                  </video>
+              </div>
+              <div class="projectdescbox">
+                  <div class="projectname">Pureformance - Ecommerce Website<span class="projectyear nobold white">2025&ndash;26</span></div>
+                  <div class="projectwords">Online home and primary sales channel of Pureformance energy drink. Customers can 
+                      browse the product catalog and view company information, place orders with Stripe integration, and create 
+                      accounts to earn benefits and see past orders.
+                      <br/><div class="divider"></div>
+                      React frontend connects to a Node.js backend and MongoDB database to store account data, products, orders, etc.
+                      Integrations with Redis and Stripe for login caching and secure checkout.
+                      <p class="projectlink code"><a href="https://pureformance-frontend.vercel.app" target="blank">/* Buy Now! */</b></a></p>
+                  </div>
+                  <div class="projectlangs">
+                      <div class="tooltip"><img src="./imgs/react.png" class="projecticon" alt="ReactJS Logo">
+                          <span class="tooltiptext">React</span>
+                      </div>
+                      <div class="tooltip"><img src="./imgs/nodejs.svg" class="projecticon" alt="Node.js Logo">
+                          <span class="tooltiptext">Node.js</span>
+                      </div>
+                      <div class="tooltip"><img src="./imgs/mongodb.svg" class="projecticon" alt="MongoDB Logo">
+                          <span class="tooltiptext">MongoDB</span>
+                      </div>
+                      <div class="tooltip"><img src="./imgs/redis.svg" class="projecticon" alt="Redis Logo">
+                          <span class="tooltiptext">Redis</span>
+                      </div>
+                      <div class="tooltip"><img src="./imgs/stripe.svg" class="projecticon" alt="Stripe Logo">
+                          <span class="tooltiptext">Stripe</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="projectshowcasemobile">
+                  <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
+                      <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </section> -->
+
+      <!--Pitwall-->
+
+      <section class="projectsrow">
+        <div class="projectshowcase">
+          <video width="100%" controls autoplay muted class="projectvideo">
+            <source src="./imgs/pitwalldemo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="projectdescbox">
+          <div class="projectname">Pitwall - F1 AI Analysis Tool<span class="projectyear nobold white">2025</span></div>
+          <div class="projectwords">A 2-in-1 tool that provides unique insight into Formula One races.
+            <br />
+            <div class="divider"></div>
+            The radio explainer transcribes radio messages and provides an AI explanation for
+            users just getting into the sport, considering key context in its response. The
+            model was fine-tuned using over 600 radio messages from the 2023 season.
+            <br />
+            <div class="divider"></div>
+            The lap visualizer allows the user to select any two drivers' laps to compare.
+            The drivers' realtime telemetry and racing line are then played out, showing users
+            the fine margins between great and legendary drivers. More technical details are
+            available on the website.
+            <p class="projectlink code"><a href="https://github.com/jwwylie1/pitwall/" target="_blank">/* Github Repo
+                */</b></a></p>
+            <p class="projectlink code"><a href="https://f1-pitwall.vercel.app/" target="_blank">/* Live Link */</b></a>
+            </p>
+          </div>
+          <div class="projectlangs">
+            <div class="tooltip"><img src="./imgs/py.svg" class="projecticon" alt="Python Logo">
+              <span class="tooltiptext">Python</span>
+            </div>
+            <div class="tooltip"><img src="./imgs/huggingface.png" class="projecticon" alt="HuggingFace Logo">
+              <span class="tooltiptext">HuggingFace</span>
+            </div>
+            <div class="tooltip"><img src="./imgs/react.png" class="projecticon" alt="ReactJS Logo">
+              <span class="tooltiptext">React</span>
+            </div>
+            <div class="tooltip"><img src="./imgs/fastapi.png" class="projecticon" alt="FastAPI Logo">
+              <span class="tooltiptext">FastAPI</span>
+            </div>
+          </div>
+        </div>
+        <div class="projectshowcasemobile">
+          <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
+            <source src="./imgs/pitwalldemo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+
+      <!--Blackjack-->
+
+      <section class="projectsrow">
+        <div class="projectshowcase">
+          <video width="100%" controls autoplay muted class="projectvideo">
+            <source src="./imgs/blackjackdemo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="projectdescbox">
+          <div class="projectname">Beat the House - Blackjack and Card Counting Trainer<span
+              class="projectyear nobold white">2025</span></div>
+          <div class="projectwords">A C++/SFML-based Blackjack simulator that trains players in decision-making and
+            card-counting
+            techniques. After each move (hit, stand, double, etc.), the app evaluates whether the choice was statistically
+            optimal and provides instant feedback.
+            <br />
+            <div class="divider"></div>
+            Users can also enable true count tracking and live player edge (for real-time card-counting practice), which
+            is
+            calculated by running 100,000 Monte Carlo simulations per hand, using optimal strategy on the remaining deck
+            composition.
+            <p class="projectlink code"><a href="https://github.com/jwwylie1/Blackjack" target="_blank">/* Github Repo
+                */</b></a></p>
+          </div>
+          <div class="projectlangs">
+            <div class="tooltip"><img src="./imgs/cpp.svg" class="projecticon" alt="C++ Logo">
+              <span class="tooltiptext">C++</span>
+            </div>
+            <div class="tooltip"><img src="./imgs/sfml.svg" class="projecticon" alt="SFML Logo">
+              <span class="tooltiptext">SFML</span>
+            </div>
+          </div>
+        </div>
+        <div class="projectshowcasemobile">
+          <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
+            <source src="./imgs/blackjackdemo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+
+      <!--Pacybase-->
+
+      <section class="projectsrow">
+        <div class="projectshowcase">
+          <video width="100%" controls autoplay muted class="projectvideo">
+            <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="projectdescbox">
+          <div class="projectname">Pacybase/MF Trading - Card Trading Platform<span
+              class="projectyear nobold white">2022&ndash;24</span></div>
+          <div class="projectwords">A full-stack website for users of card-collecting apps Pacybits/Madfut to post and
+            search
+            for trade requests, helping users complete their collection more effectively than ever. Started in 2022,
+            revamped in 2024.
+            <br />
+            <div class="divider"></div>
+            Uses a Node.js backend connected to a MongoDB database to store user posts. A custom web scraper was used to
+            generate an array of over 6300 objects and download images for each. Vanilla HTML, CSS, and JavaScript make up
+            the
+            frontend. Deployed on Heroku via GitHub.
+            <p class="projectlink code"><a href="https://pacybase.fly.dev/" target="_blank">/* Live Link */</b></a></p>
+          </div>
+          <div class="projectlangs">
+            <div class="tooltip"><img src="./imgs/html5.svg" class="projecticon" alt="HTML5 Logo">
+              <span class="tooltiptext">HTML5</span>
+            </div>
+            <div class="tooltip"><img src="./imgs/css3.svg" class="projecticon" alt="CSS Logo">
+              <span class="tooltiptext">CSS3</span>
+            </div>
+            <div class="tooltip"><img src="./imgs/js.svg" class="projecticon" alt="JavaScript Logo">
+              <span class="tooltiptext">JavaScript</span>
+            </div>
+            <div class="tooltip"><img src="./imgs/nodejs.svg" class="projecticon" alt="Node.js Logo">
+              <span class="tooltiptext">Node.js</span>
+            </div>
+            <div class="tooltip"><img src="./imgs/mongodb.svg" class="projecticon" alt="MongoDB Logo">
+              <span class="tooltiptext">MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <div class="projectshowcasemobile">
+          <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
+            <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+
+      <!--Lwyliephotography-->
+      <div class="projectsrow">
+        <div class="projectshowcase">
+          <video width="100%" controls autoplay muted class="projectvideo">
+            <source src="./imgs/lwpdemo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="projectdescbox">
+          <div class="projectname">lwyliephotography - Interactive Photo Gallery<span
+              class="projectyear nobold white">2019</span></div>
+          <div class="projectwords">My first programming endeavor. A simple yet elegant website showcasing hundreds of
+            photos from
+            across the globe, all captured by my wonderful sister.
+            <p class="projectlink code"><a href="https://lwyliephotography.github.io" target="_blank">/* Live Link
+                */</b></a></p>
+          </div>
+          <div class="projectlangs">
+            <div class="tooltip"><img src="./imgs/html5.svg" class="projecticon" alt="HTML Logo">
+              <span class="tooltiptext">HTML5</span>
+            </div>
+            <div class="tooltip"><img src="./imgs/css3.svg" class="projecticon" alt="CSS Logo">
+              <span class="tooltiptext">CSS3</span>
+            </div>
+            <div class="tooltip"><img src="./imgs/js.svg" class="projecticon" alt="JavaScript Logo">
+              <span class="tooltiptext">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="projectshowcasemobile">
+          <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
+            <source src="./imgs/lwpdemo.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </section>
-
-    <!--Blackjack-->
-
-    <section class="projectsrow">
-      <div class="projectshowcase">
-        <video width="100%" controls autoplay muted class="projectvideo">
-          <source src="./imgs/blackjackdemo.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="projectdescbox">
-        <div class="projectname">Beat the House - Blackjack and Card Counting Trainer<span
-            class="projectyear nobold white">2025</span></div>
-        <div class="projectwords">A C++/SFML-based Blackjack simulator that trains players in decision-making and
-          card-counting
-          techniques. After each move (hit, stand, double, etc.), the app evaluates whether the choice was statistically
-          optimal and provides instant feedback.
-          <br />
-          <div class="divider"></div>
-          Users can also enable true count tracking and live player edge (for real-time card-counting practice), which
-          is
-          calculated by running 100,000 Monte Carlo simulations per hand, using optimal strategy on the remaining deck
-          composition.
-          <p class="projectlink code"><a href="https://github.com/jwwylie1/Blackjack" target="_blank">/* Github Repo
-              */</b></a></p>
-        </div>
-        <div class="projectlangs">
-          <div class="tooltip"><img src="./imgs/cpp.svg" class="projecticon">
-            <span class="tooltiptext">C++</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/sfml.svg" class="projecticon">
-            <span class="tooltiptext">SFML</span>
-          </div>
-        </div>
-      </div>
-      <div class="projectshowcasemobile">
-        <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
-          <source src="./imgs/blackjackdemo.mp4" type="video/mp4">
-        </video>
-      </div>
-    </section>
-
-    <!--Pacybase-->
-
-    <section class="projectsrow">
-      <div class="projectshowcase">
-        <video width="100%" controls autoplay muted class="projectvideo">
-          <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="projectdescbox">
-        <div class="projectname">Pacybase/MF Trading - Card Trading Platform<span
-            class="projectyear nobold white">2022&ndash;24</span></div>
-        <div class="projectwords">A full-stack website for users of card-collecting apps Pacybits/Madfut to post and
-          search
-          for trade requests, helping users complete their collection more effectively than ever. Started in 2022,
-          revamped in 2024.
-          <br />
-          <div class="divider"></div>
-          Uses a Node.js backend connected to a MongoDB database to store user posts. A custom web scraper was used to
-          generate an array of over 6300 objects and download images for each. Vanilla HTML, CSS, and JavaScript make up
-          the
-          frontend. Deployed on Heroku via GitHub.
-          <p class="projectlink code"><a href="https://pacybase.fly.dev/" target="_blank">/* Live Link */</b></a></p>
-        </div>
-        <div class="projectlangs">
-          <div class="tooltip"><img src="./imgs/html5.svg" class="projecticon">
-            <span class="tooltiptext">HTML5</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/css3.svg" class="projecticon">
-            <span class="tooltiptext">CSS3</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/js.svg" class="projecticon">
-            <span class="tooltiptext">JavaScript</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/nodejs.svg" class="projecticon">
-            <span class="tooltiptext">Node.js</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/mongodb.svg" class="projecticon">
-            <span class="tooltiptext">MongoDB</span>
-          </div>
-        </div>
-      </div>
-      <div class="projectshowcasemobile">
-        <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
-          <source src="./imgs/pacybasedemo.mp4" type="video/mp4">
-        </video>
-      </div>
-    </section>
-
-    <!--Lwyliephotography-->
-    <div class="projectsrow">
-      <div class="projectshowcase">
-        <video width="100%" controls autoplay muted class="projectvideo">
-          <source src="./imgs/lwpdemo.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="projectdescbox">
-        <div class="projectname">lwyliephotography - Interactive Photo Gallery<span
-            class="projectyear nobold white">2019</span></div>
-        <div class="projectwords">My first programming endeavor. A simple yet elegant website showcasing hundreds of
-          photos from
-          across the globe, all captured by my wonderful sister.
-          <p class="projectlink code"><a href="https://lwyliephotography.github.io" target="_blank">/* Live Link
-              */</b></a></p>
-        </div>
-        <div class="projectlangs">
-          <div class="tooltip"><img src="./imgs/html5.svg" class="projecticon">
-            <span class="tooltiptext">HTML5</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/css3.svg" class="projecticon">
-            <span class="tooltiptext">CSS3</span>
-          </div>
-          <div class="tooltip"><img src="./imgs/js.svg" class="projecticon">
-            <span class="tooltiptext">JavaScript</span>
-          </div>
-        </div>
-      </div>
-      <div class="projectshowcasemobile">
-        <video width="100%" controls autoplay muted webkit-playsinline playsinline class="projectvideo">
-          <source src="./imgs/lwpdemo.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </section>
+  </main>
   <img class="endicon" src="./imgs/JW4.png" onclick="scrollToTop()" />
 
   <div id="copiedtoclipboard">"jwwylie1@gmail.com" copied to clipboard!</div>
