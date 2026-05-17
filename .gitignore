@@ -1,0 +1,12 @@
+# Jonayota source (built output in projects/jonayota/ is committed instead)
+jonayota-src/
+
+# Dependencies
+jonayota-backend/node_modules/
+
+# Environment variables (never commit secrets)
+jonayota-backend/.env
+
+# OS
+.DS_Store
+Thumbs.db
