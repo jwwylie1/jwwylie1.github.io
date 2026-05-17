@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/projects/jonayota/static/css/main.5132d486.css",
+    "main.js": "/projects/jonayota/static/js/main.2395bf06.js",
+    "index.html": "/projects/jonayota/index.html",
+    "main.5132d486.css.map": "/projects/jonayota/static/css/main.5132d486.css.map",
+    "main.2395bf06.js.map": "/projects/jonayota/static/js/main.2395bf06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5132d486.css",
+    "static/js/main.2395bf06.js"
+  ]
+}
