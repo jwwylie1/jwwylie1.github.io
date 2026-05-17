@@ -311,10 +311,14 @@ h1 {
 .companylogo { width: 90%; }
 .companytitle { font-size: calc(11px + 1.2vw); }
 
-.xpo { background-color: white; }
+.xpo { background-color: white; box-sizing: border-box; padding: 2px; }
 .xpo, .xpodesc {margin-top: 2rem;}
+.um { background-color: #00274C; box-sizing: border-box; padding: 4px;}
+.um, .umdesc { margin-top: -12rem; }
+.free { background-color: #00274c; box-sizing: border-box; padding: 2px;}
+.free, .freedesc { margin-top: -4rem }
 .kpit { background-color: #b0ff44; }
-.kpit, .kpitdesc {margin-top: 2rem;}
+.kpit, .kpitdesc {margin-top: -8rem;}
 .parc { background-color: white; }
 .parc, .parcdesc {margin-top: -18rem;}
 
