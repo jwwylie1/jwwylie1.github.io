@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/projects/jonayota/static/css/main.2f4a5966.css",
-    "main.js": "/projects/jonayota/static/js/main.aac08f95.js",
+    "main.js": "/projects/jonayota/static/js/main.d250eff6.js",
     "index.html": "/projects/jonayota/index.html",
     "main.2f4a5966.css.map": "/projects/jonayota/static/css/main.2f4a5966.css.map",
-    "main.aac08f95.js.map": "/projects/jonayota/static/js/main.aac08f95.js.map"
+    "main.d250eff6.js.map": "/projects/jonayota/static/js/main.d250eff6.js.map"
   },
   "entrypoints": [
     "static/css/main.2f4a5966.css",
-    "static/js/main.aac08f95.js"
+    "static/js/main.d250eff6.js"
   ]
 }
