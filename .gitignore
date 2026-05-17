@@ -1,11 +1,6 @@
-# Jonayota source (built output in projects/jonayota/ is committed instead)
+# Jonayota — source and backend live in their own repos
 jonayota-src/
-
-# Dependencies
-jonayota-backend/node_modules/
-
-# Environment variables (never commit secrets)
-jonayota-backend/.env
+jonayota-backend/
 
 # OS
 .DS_Store
